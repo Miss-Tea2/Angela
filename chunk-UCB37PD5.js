@@ -1,0 +1,1 @@
+import"./chunk-P2VZOJAX.js";var t=[{path:"",redirectTo:"contact-misstea2",pathMatch:"full"},{path:"",title:"\u83B7\u53D6 Angela",children:[{path:"contact-misstea2",loadChildren:()=>import("./chunk-XMTSYL6T.js")}]}],a=t;export{a as default};

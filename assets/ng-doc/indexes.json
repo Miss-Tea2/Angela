@@ -1,0 +1,824 @@
+[
+  {
+    "breadcrumbs": [
+      "更新日志"
+    ],
+    "pageType": "guide",
+    "title": "更新日志",
+    "section": "更新日志",
+    "route": "/changelog",
+    "fragment": "更新日志",
+    "content": "请见 Telegram 频道。"
+  },
+  {
+    "breadcrumbs": [
+      "社区群组"
+    ],
+    "pageType": "guide",
+    "title": "社区群组",
+    "section": "社区群组",
+    "route": "/community",
+    "fragment": "社区群组",
+    "content": "茶兔小卖部（频道）：https://t.me/miss_tea2s_shop茶兔俱乐部（群组）：https://t.me/miss_tea2s_club"
+  },
+  {
+    "breadcrumbs": [
+      "常见问题"
+    ],
+    "pageType": "guide",
+    "title": "常见问题",
+    "section": "Angela 是否支持拖拽进 ",
+    "route": "/faq",
+    "fragment": "angela-是否支持拖拽进-themes-文件夹安装",
+    "content": "themes"
+  },
+  {
+    "breadcrumbs": [
+      "常见问题"
+    ],
+    "pageType": "guide",
+    "title": "常见问题",
+    "section": " 文件夹安装？",
+    "route": "/faq",
+    "fragment": "angela-是否支持拖拽进-themes-文件夹安装",
+    "content": "Angela 只支持以前后端分离的方式部署。详见 Angela 架构"
+  },
+  {
+    "breadcrumbs": [
+      "常见问题"
+    ],
+    "pageType": "guide",
+    "title": "常见问题",
+    "section": "Angela 是否兼容原版 Web 面板的页面路径/邀请链接？",
+    "route": "/faq",
+    "fragment": "angela-是否兼容原版-web-面板的页面路径邀请链接",
+    "content": "Angela 兼容绝大多数原版 Web 面板的路径和参数，包括但不限于邀请链接、注册链接、登入链接、订阅管理、订单列表、订单详情、工单列表、工单详情。"
+  },
+  {
+    "breadcrumbs": [
+      "常见问题"
+    ],
+    "pageType": "guide",
+    "title": "常见问题",
+    "section": "为什么 Angela 经常无规律白屏卡死？",
+    "route": "/faq",
+    "fragment": "为什么-angela-经常无规律白屏卡死",
+    "content": "请检查是否将 Crisp 相关脚本插入到了 index.html 而非 extension.html，Crisp 对 JavaScript 全局对象的修改会导致 Angela 的部分依赖陷入死循环。详见 附加额外脚本/样式。"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "Angela 架构"
+    ],
+    "pageType": "guide",
+    "title": "Angela 架构",
+    "section": "Angela 架构",
+    "route": "/deployment/infrastructure",
+    "fragment": "angela-架构",
+    "content": "默认架构下，V2board 同时扮演后端和前端的角色："
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "Angela 架构"
+    ],
+    "pageType": "guide",
+    "title": "Angela 架构",
+    "section": "Angela 架构",
+    "route": "/deployment/infrastructure",
+    "fragment": "angela-架构",
+    "content": "对于 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "Angela 架构"
+    ],
+    "pageType": "guide",
+    "title": "Angela 架构",
+    "section": "Angela 架构",
+    "route": "/deployment/infrastructure",
+    "fragment": "angela-架构",
+    "content": "/"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "Angela 架构"
+    ],
+    "pageType": "guide",
+    "title": "Angela 架构",
+    "section": "Angela 架构",
+    "route": "/deployment/infrastructure",
+    "fragment": "angela-架构",
+    "content": " 路径的请求，V2board 调用其模板引擎填充前端配置，并返回前端资源文件 对于 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "Angela 架构"
+    ],
+    "pageType": "guide",
+    "title": "Angela 架构",
+    "section": "Angela 架构",
+    "route": "/deployment/infrastructure",
+    "fragment": "angela-架构",
+    "content": "/api/*"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "Angela 架构"
+    ],
+    "pageType": "guide",
+    "title": "Angela 架构",
+    "section": "Angela 架构",
+    "route": "/deployment/infrastructure",
+    "fragment": "angela-架构",
+    "content": " 路径的请求，V2board 执行相对应的逻辑，扮演后端的角色"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "Angela 架构"
+    ],
+    "pageType": "guide",
+    "title": "Angela 架构",
+    "section": "Angela 架构",
+    "route": "/deployment/infrastructure",
+    "fragment": "angela-架构",
+    "content": "出于对多种因素的考虑，Angela 只支持通过前后端分离的方式部署。V2board 只需承担后端的职责，Angela 将会作为一个静态站点担任前端： 用户的所有请求都会由部署了 Angela 的前端站点处理用户加载 Angela 后，Angela 会向部署了 V2board 的后端站点请求数据 假设 Angela 部署在 https://example.org，V2board 部署在 https://v2board.example.org，用户的浏览器会产生类似如下的请求： 若您不希望使用多个域名，也可以通过使用反向代理，将对于 Angela 站点 /api/ 路径的请求委托给 V2board 站点处理。 沿用上面的例子，通过配置反向代理，所有对于 https://example.org/api/ 的请求都将会被委托给 https://v2board.example.org/api/ 处理。这种情况下，用户的浏览器会产生类似如下的请求： 如果您已经使用 aaPanel 搭建了 V2board 站点，从默认架构迁移 可以帮助您快速迁移架构以部署 Angela。"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "从默认架构迁移",
+    "route": "/deployment/migration",
+    "fragment": "从默认架构迁移",
+    "content": "如果您已经使用 aaPanel 搭建了一个 V2board 站点，这篇教程可以帮助您快速迁移架构以部署 Angela。"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "从默认架构迁移",
+    "route": "/deployment/migration",
+    "fragment": "从默认架构迁移",
+    "content": "在阅读这篇教程前，清确保"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "从默认架构迁移",
+    "route": "/deployment/migration",
+    "fragment": "从默认架构迁移",
+    "content": "您已经搭建了一个 V2board 站点 当前的 V2board 站点可以通过 HTTPS 协议访问 您拥有一定的 aaPanel/宝塔面板 的运维经验"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "从默认架构迁移",
+    "route": "/deployment/migration",
+    "fragment": "从默认架构迁移",
+    "content": "在这篇教程中，我们假设： 当前已经存在的 V2board 站点名为 best-vpn.org当前已经存在的 V2board 站点绑定了域名 best-vpn.org 我们定义： 后端站点：V2board 所在的站点（已存在）前端站点：Angela 所在的站点（还不存在）"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "Angela 要求前后端分离的架构，而 V2board 目前同时担任着前端和后端。因此，我们需要 V2board 将前端让给 Angela —— 我们需要 V2board 所在的后端站点将 best-vpn.org 这个域名让给我们后续要创建的前端站点："
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "双击后端站点 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "best-vpn.org"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "，进入站点详情界面 新增绑定 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "v2board.best-vpn.org"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": " 和 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "127.0.0.1:4321"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "移除绑定 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "best-vpn.org"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "如果您不希望使用反向代理，则不需要绑定 127.0.0.1:4321"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "1. 更新后端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "1-更新后端站点域名绑定",
+    "content": "如果先前的 SSL 证书不包含 v2board.best-vpn.org，我们需要获取新的证书。建议备份旧的证书：在后续的步骤中，我们后续要创建的前端站点将会绑定 best-vpn.org 并可以用上这份证书。请不要开启强制 HTTPS"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "2. 创建前端站点",
+    "route": "/deployment/migration",
+    "fragment": "2-创建前端站点",
+    "content": "我们需要创建一个新的站点作为前端站点，用于服务 Angela 的资源文件： 在域名处，我们填写了 best-vpn.gateway 这个不存在的域名，这是因为站点名 best-vpn.org 已被我们现有的 V2board 站点占用，我们需要用一个不一样的名字以避免名称冲突。best-vpn.gateway、best-vpn.entry、best-vpn.frontend 等都是不错的选择。 不用担心，这并不意味着我们最终必须使用 best-vpn.gateway 作为这个站点的域名。我们会在后续的步骤中更正该站点的域名绑定。 另外，我们需要把 PHP 版本 选择为 纯静态。这是因为我们要创建的是一个前端站点。我们只需要这个站点能够正确返回请求的静态资源即可，并不需要 PHP。"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "3. 更正前端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "3-更正前端站点域名绑定",
+    "content": "双击后端站点 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "3. 更正前端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "3-更正前端站点域名绑定",
+    "content": "best-vpn.gateway"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "3. 更正前端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "3-更正前端站点域名绑定",
+    "content": "，进入站点详情界面 新增绑定 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "3. 更正前端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "3-更正前端站点域名绑定",
+    "content": "best-vpn.org"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "3. 更正前端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "3-更正前端站点域名绑定",
+    "content": "移除绑定 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "3. 更正前端站点域名绑定",
+    "route": "/deployment/migration",
+    "fragment": "3-更正前端站点域名绑定",
+    "content": "best-vpn.gateway"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "4. 启用前端站点 HTTPS",
+    "route": "/deployment/migration",
+    "fragment": "4-启用前端站点-https",
+    "content": "如果先前备份了后端站点的旧 SSL 证书，由于域名相同，我们可以直接使用备份的证书： 若未备份，则需要按常规流程申请新的证书。"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "5. 修改前端站点配置文件",
+    "route": "/deployment/migration",
+    "fragment": "5-修改前端站点配置文件",
+    "content": "接下来，我们需要转到 “配置文件” 页面，对站点的 Nginx 配置文件进行一些必要的修改："
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "5. 修改前端站点配置文件",
+    "route": "/deployment/migration",
+    "fragment": "5-修改前端站点配置文件",
+    "content": "在配置文件的最开头，"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "5. 修改前端站点配置文件",
+    "route": "/deployment/migration",
+    "fragment": "5-修改前端站点配置文件",
+    "content": "server"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "5. 修改前端站点配置文件",
+    "route": "/deployment/migration",
+    "fragment": "5-修改前端站点配置文件",
+    "content": " 的前面，插入以下配置： 在配置文件的中间部分，"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "5. 修改前端站点配置文件",
+    "route": "/deployment/migration",
+    "fragment": "5-修改前端站点配置文件",
+    "content": "root"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "5. 修改前端站点配置文件",
+    "route": "/deployment/migration",
+    "fragment": "5-修改前端站点配置文件",
+    "content": " 的下一行，插入以下配置："
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "5. 修改前端站点配置文件",
+    "route": "/deployment/migration",
+    "fragment": "5-修改前端站点配置文件",
+    "content": "如果您不希望使用反向代理，请将上面配置中的 http://127.0.0.1:4321 替换为您的实际后端站点 URL，如 https://v2board.best-vpn.org"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "6. 上传 Angela 资源文件",
+    "route": "/deployment/migration",
+    "fragment": "6-上传-angela-资源文件",
+    "content": "至此，前端站点已经基本配置完毕，最后只需将 Angela 的资源文件上传到前端站点，即可完成 Angela 的全部准备工作。"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "6. 上传 Angela 资源文件",
+    "route": "/deployment/migration",
+    "fragment": "6-上传-angela-资源文件",
+    "content": "进入前端站点根目录 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "6. 上传 Angela 资源文件",
+    "route": "/deployment/migration",
+    "fragment": "6-上传-angela-资源文件",
+    "content": "/www/wwwroot/best-vpn.gateway"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "6. 上传 Angela 资源文件",
+    "route": "/deployment/migration",
+    "fragment": "6-上传-angela-资源文件",
+    "content": "上传并解压 Angela 构建包 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "6. 上传 Angela 资源文件",
+    "route": "/deployment/migration",
+    "fragment": "6-上传-angela-资源文件",
+    "content": "xxx.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.zip"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "6. 上传 Angela 资源文件",
+    "route": "/deployment/migration",
+    "fragment": "6-上传-angela-资源文件",
+    "content": "将 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "6. 上传 Angela 资源文件",
+    "route": "/deployment/migration",
+    "fragment": "6-上传-angela-资源文件",
+    "content": "browser"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "6. 上传 Angela 资源文件",
+    "route": "/deployment/migration",
+    "fragment": "6-上传-angela-资源文件",
+    "content": " 文件夹内的所有内容移动到站点根目录下 (可选) 移除多余的文件/文件夹"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "常见问题",
+    "route": "/deployment/migration",
+    "fragment": "常见问题",
+    "content": "我该如何访问 V2board 管理后台？ 通过后端域名访问即可，如 "
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "常见问题",
+    "route": "/deployment/migration",
+    "fragment": "常见问题",
+    "content": "https://v2board.best-vpn.org/abcdefg/"
+  },
+  {
+    "breadcrumbs": [
+      "部署 Angela",
+      "从默认架构迁移"
+    ],
+    "pageType": "guide",
+    "title": "从默认架构迁移",
+    "section": "常见问题",
+    "route": "/deployment/migration",
+    "fragment": "常见问题",
+    "content": "为什么 Angela 卡在了转圈圈的界面？ Angela 无法从 V2board 获取数据，请跟随教程检查站点配置 我不想暴露我的后端怎么办？ 教程默认启用反向代理，后端域名对用户不可见。建议使用私人域名绑定后端站点以增强安全性。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "演示"
+    ],
+    "pageType": "guide",
+    "title": "演示",
+    "section": "演示",
+    "route": "/introduction/demo",
+    "fragment": "演示",
+    "content": "蛋挞云 是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在 蛋挞云 亲自体验 Angela： 地址：https://eggtartcloud.shop/账号：trial@angela.com密码：angela-theme"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "设计"
+    ],
+    "pageType": "guide",
+    "title": "设计",
+    "section": "设计",
+    "route": "/introduction/design",
+    "fragment": "设计",
+    "content": "Angela 的 “精心设计” 并非纸上谈兵：每一个页面、每一处交互都有其相对应的设计稿。      "
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "功能"
+    ],
+    "pageType": "guide",
+    "title": "功能",
+    "section": "功能",
+    "route": "/introduction/features",
+    "fragment": "功能",
+    "content": "经过无数版本的迭代，Angela 已经相当成熟，包含了运营代理服务所需的绝大部分功能，包括但不限于： 用户注册、登入账号密码重置邮箱验证码重发ReCaptcha/Turnstile 人机验证使用 Token 登录（对接第三方客户端）从 Gravatar 和 QQ 获取的用户头像公告显示、弹出套餐显示、筛选、购买订单显示、检视、筛选、取消订单跳转外部收银台支付/二维码支付优惠卷校验、使用订阅链接复制/显示二维码订阅导入至代理客户端订阅节点及状态显示订阅流量使用情况显示帮助文档渲染、排版copy() 和 jump() 全局函数的支持Angela 控件在 Markdown/HTML 中的渲染聊天式的工单系统可自定义的工单优先级文字佣金及账户余额的显示佣金系统的信息显示佣金的划转以及提现返佣记录的显示邀请码的显示、复制、生成Telegram 群组链接Telegram Bot 绑定引导额外脚本/样式的支持Crisp 以及 Google Analytics 支持国际化/多语言支持"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "Angela，一款以用户体验为核心设计的 V2board Web 面板，由 Angular 驱动，汲取 Material Design 的设计精髓，为您的品牌注入独特的视觉语言。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "Angela 正在向 v2.0 的里程碑迈进，用户界面设计存在大量变更。您可能会看到同一个页面的不同外观，但最终效果将以 设计 中规范的为准。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "Angela 具有以下核心优势："
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "完全动态生成的配色方案: 利用 Angela 独家的配色算法，基于任意种子色，打造最贴合品牌形象的专属配色方案 四种精心设计的布局方案: 适配手机、平板、笔记本、台式机的任意屏幕朝向，在任何设备上提供同水准的用户体验 丝滑流畅的交互设计： 通过精心打磨的界面动效，留下最深刻的品牌印象，传递以用户为中心的品牌态度"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "为了确保最优质的用户体验，Angela 以 PWA - 渐进式 Web 应用 的形态呈现。相较于传统的 Web 应用，PWA："
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "支持用户侧本地缓存： 首次加载时会在用户的本地浏览器中缓存所有资源，保证在后续访问时可以立即呈现页面内容 支持离线访问： 受益于本地缓存机制，用户在断网状态依然可以访问 Angela，但离线状态的用户体验目前还处于计划阶段 支持作为 App 安装到桌面： 在支持的浏览器中，Angela 可以作为 App 安装到用户桌面"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "当 Angela 作为 App 安装后，应用会在独立的窗口中呈现，此时用户可选择： 将 Angela 固定到任务栏将 Angela 固定到开始菜单为 Angela 创建桌面快捷方式在开机时自启动 Angela"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "联系茶兔"
+    ],
+    "pageType": "guide",
+    "title": "联系茶兔",
+    "section": "联系茶兔",
+    "route": "/purchase/contact-misstea2",
+    "fragment": "联系茶兔",
+    "content": "如果您对 Angela 有兴趣，请联系 茶兔，发送：“Angela 咨询”。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "联系茶兔"
+    ],
+    "pageType": "guide",
+    "title": "联系茶兔",
+    "section": "联系茶兔",
+    "route": "/purchase/contact-misstea2",
+    "fragment": "联系茶兔",
+    "content": "Angela 的自助分发系统正在积极开发中"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "附加额外脚本/样式"
+    ],
+    "pageType": "guide",
+    "title": "附加额外脚本/样式",
+    "section": "附加额外脚本/样式",
+    "route": "/recipes/extension-html",
+    "fragment": "附加额外脚本样式",
+    "content": "Angela 允许您附加额外的 HTML、脚本、和样式。 在每一个语言变体下，都存在一个 extension.html 文件。该文件会在 Angela 主体初始化完成后被加载，其包含的所有内容都将被加载进当前页面： 内联脚本将被执行远程脚本将被加载并执行样式将被附加到页面远程样式将被加载并附加到页面HTML 元素将被附加到  底部 您可以将 extension.html 视作 index.html 的一部分。通过 extension.html，您可以集成 Crisp、Cloudflare、Google Analytics 等多种第三方服务到 Angela。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "附加额外脚本/样式"
+    ],
+    "pageType": "guide",
+    "title": "附加额外脚本/样式",
+    "section": "附加额外脚本/样式",
+    "route": "/recipes/extension-html",
+    "fragment": "附加额外脚本样式",
+    "content": "请勿直接编辑 index.html，其可能拖慢甚至阻止 Angela 加载。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "国际化"
+    ],
+    "pageType": "guide",
+    "title": "国际化",
+    "section": "国际化",
+    "route": "/recipes/internationalization",
+    "fragment": "国际化",
+    "content": "Angela 采用的是编译时国际化的方案，最终的构建包中会包含应用多个语言的变体，如 zh 和 en。当用户访问 Angela 时，Angela 依赖服务器，如 Nginx 或 Apache，来根据用户的语言偏好设置自动重定向到适当的语言变体。 每个语言变体都拥有独立的配置文件，以此实现配置文件的国际化： zh/settings.yaml - zh 语言下的配置文件en/settings.yaml - en 语言下的配置文件 在编辑配置文件时，需要注意选择合适的语言变体。"
+  }
+]
