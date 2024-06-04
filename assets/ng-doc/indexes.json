@@ -151,6 +151,30 @@
   },
   {
     "breadcrumbs": [
+      "了解 Angela",
+      "演示"
+    ],
+    "pageType": "guide",
+    "title": "演示",
+    "section": "演示",
+    "route": "/introduction/demo",
+    "fragment": "演示",
+    "content": "蛋挞云 是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在 蛋挞云 亲自体验 Angela： 地址：https://eggtartcloud.shop/账号：trial@angela.com密码：angela-theme"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "设计"
+    ],
+    "pageType": "guide",
+    "title": "设计",
+    "section": "设计",
+    "route": "/introduction/design",
+    "fragment": "设计",
+    "content": "Angela 的 “精心设计” 并非纸上谈兵：每一个页面、每一处交互都有其相对应的设计稿。      "
+  },
+  {
+    "breadcrumbs": [
       "部署 Angela",
       "从默认架构迁移"
     ],
@@ -159,7 +183,7 @@
     "section": "从默认架构迁移",
     "route": "/deployment/migration",
     "fragment": "从默认架构迁移",
-    "content": "如果您已经使用 aaPanel 搭建了一个 V2board 站点，这篇教程可以帮助您快速迁移架构以部署 Angela。"
+    "content": "如果您已经使用 aaPanel 搭建了一个 V2board 站点，这篇教程可以帮助您快速迁移架构以适配 Angela。"
   },
   {
     "breadcrumbs": [
@@ -327,7 +351,7 @@
     "section": "1. 更新后端站点域名绑定",
     "route": "/deployment/migration",
     "fragment": "1-更新后端站点域名绑定",
-    "content": "如果先前的 SSL 证书不包含 v2board.best-vpn.org，我们需要获取新的证书。建议备份旧的证书：在后续的步骤中，我们后续要创建的前端站点将会绑定 best-vpn.org 并可以用上这份证书。请不要开启强制 HTTPS"
+    "content": "如果先前的 SSL 证书不包含 v2board.best-vpn.org，我们需要获取新的证书。建议备份旧的证书：在后续的步骤中，我们后续要创建的前端站点将会绑定 best-vpn.org 并可以用上这份证书。"
   },
   {
     "breadcrumbs": [
@@ -507,7 +531,7 @@
     "section": "5. 修改前端站点配置文件",
     "route": "/deployment/migration",
     "fragment": "5-修改前端站点配置文件",
-    "content": "如果您不希望使用反向代理，请将上面配置中的 http://127.0.0.1:4321 替换为您的实际后端站点 URL，如 https://v2board.best-vpn.org"
+    "content": "如果您不希望使用反向代理，可以忽略上面的 location /api 配置。"
   },
   {
     "breadcrumbs": [
@@ -555,31 +579,7 @@
     "section": "6. 上传 Angela 资源文件",
     "route": "/deployment/migration",
     "fragment": "6-上传-angela-资源文件",
-    "content": "上传并解压 Angela 构建包 "
-  },
-  {
-    "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
-    ],
-    "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "6. 上传 Angela 资源文件",
-    "route": "/deployment/migration",
-    "fragment": "6-上传-angela-资源文件",
-    "content": "xxx.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.zip"
-  },
-  {
-    "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
-    ],
-    "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "6. 上传 Angela 资源文件",
-    "route": "/deployment/migration",
-    "fragment": "6-上传-angela-资源文件",
-    "content": "将 "
+    "content": "上传 Angela 资源包并解压 将 "
   },
   {
     "breadcrumbs": [
@@ -639,31 +639,7 @@
     "section": "常见问题",
     "route": "/deployment/migration",
     "fragment": "常见问题",
-    "content": "为什么 Angela 卡在了转圈圈的界面？ Angela 无法从 V2board 获取数据，请跟随教程检查站点配置 我不想暴露我的后端怎么办？ 教程默认启用反向代理，后端域名对用户不可见。建议使用私人域名绑定后端站点以增强安全性。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "演示"
-    ],
-    "pageType": "guide",
-    "title": "演示",
-    "section": "演示",
-    "route": "/introduction/demo",
-    "fragment": "演示",
-    "content": "蛋挞云 是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在 蛋挞云 亲自体验 Angela： 地址：https://eggtartcloud.shop/账号：trial@angela.com密码：angela-theme"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "设计"
-    ],
-    "pageType": "guide",
-    "title": "设计",
-    "section": "设计",
-    "route": "/introduction/design",
-    "fragment": "设计",
-    "content": "Angela 的 “精心设计” 并非纸上谈兵：每一个页面、每一处交互都有其相对应的设计稿。      "
+    "content": "为什么 Angela 卡在了转圈圈的界面？ Angela 无法从 V2board 获取数据，请跟随教程检查站点配置"
   },
   {
     "breadcrumbs": [
