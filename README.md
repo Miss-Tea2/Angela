@@ -2,10 +2,7 @@
 
 Angela，一款以用户体验为核心设计的 V2board Web 面板，由 [Angular](https://angular.dev) 驱动，汲取 [Material Design](https://m3.material.io/) 的设计精髓，为您的品牌注入独特的视觉语言。
 
-![](assets/thumbnail.png)
-
-> [!NOTE]
-> Angela 正在向 v2.0 的里程碑迈进，用户界面设计存在大量变更，您可能会看到同一个页面的不同外观。
+![](assets/thumbnail.avif)
 
 Angela 具有以下核心优势：
 
@@ -16,13 +13,15 @@ Angela 具有以下核心优势：
 1. 丝滑流畅的交互设计：  
    通过精心打磨的界面动效，留下最深刻的品牌印象，传递以用户为中心的品牌态度
 
-![](assets/color-schemes.png)
-![](assets/responsiveness.png)
+![](assets/responsiveness.avif)
+
+![](assets/color-schemes.avif)
 
 ## 设计
 
-![](assets/auth-large.png)
-![](assets/home-large.png)
-![](assets/subscription-large.png)
-![](assets/plans-large.png)
-![](assets/orders-large.png)
+![](assets/thumbnail.avif)
+![](assets/auth-large.avif)
+![](assets/home-large.avif)
+![](assets/subscription-large.avif)
+![](assets/plans-large.avif)
+![](assets/orders-large.avif)
