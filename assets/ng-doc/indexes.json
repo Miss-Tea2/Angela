@@ -8,7 +8,7 @@
     "section": "更新日志",
     "route": "/changelog",
     "fragment": "更新日志",
-    "content": "请见 Telegram 频道。"
+    "content": "请关注我们的社区群组！我们会在那里发布有关 Angela 的一切动态。"
   },
   {
     "breadcrumbs": [
@@ -60,10 +60,21 @@
     ],
     "pageType": "guide",
     "title": "常见问题",
-    "section": "为什么 Angela 经常无规律白屏卡死？",
+    "section": "为什么我部署的 Angela 经常无规律白屏卡死？",
     "route": "/faq",
-    "fragment": "为什么-angela-经常无规律白屏卡死",
-    "content": "请检查是否将 Crisp 相关脚本插入到了 index.html 而非 extension.html，Crisp 对 JavaScript 全局对象的修改会导致 Angela 的部分依赖陷入死循环。详见 附加额外脚本/样式。"
+    "fragment": "为什么我部署的-angela-经常无规律白屏卡死",
+    "content": "请检查是否将 Crisp 相关脚本插入到了 index.html 而非 extension.html。Crisp 对 JavaScript 全局对象的修改会导致 Angela 的部分依赖陷入死循环。详见 附加脚本与样式。"
+  },
+  {
+    "breadcrumbs": [
+      "常见问题"
+    ],
+    "pageType": "guide",
+    "title": "常见问题",
+    "section": "为什么我部署的 Angela 不能离线访问？",
+    "route": "/faq",
+    "fragment": "为什么我部署的-angela-不能离线访问",
+    "content": "Angela 的离线缓存模块会验证 Angela 资源的哈希值。对任何资源文件的私自更改都会导致缓存失效。 要附加额外的脚本和样式文件，请编辑 extension.html，而非 index.html。详见 附加脚本与样式要更改品牌 Logo 或名称，请向我们登记更改并获取新的资源包"
   },
   {
     "breadcrumbs": [
@@ -148,30 +159,6 @@
     "route": "/deployment/infrastructure",
     "fragment": "angela-架构",
     "content": "出于对多种因素的考虑，Angela 只支持通过前后端分离的方式部署。V2board 只需承担后端的职责，Angela 将会作为一个静态站点担任前端： 用户的所有请求都会由部署了 Angela 的前端站点处理用户加载 Angela 后，Angela 会向部署了 V2board 的后端站点请求数据 假设 Angela 部署在 https://example.org，V2board 部署在 https://v2board.example.org，用户的浏览器会产生类似如下的请求： 若您不希望使用多个域名，也可以通过使用反向代理，将对于 Angela 站点 /api/ 路径的请求委托给 V2board 站点处理。 沿用上面的例子，通过配置反向代理，所有对于 https://example.org/api/ 的请求都将会被委托给 https://v2board.example.org/api/ 处理。这种情况下，用户的浏览器会产生类似如下的请求： 如果您已经使用 aaPanel 搭建了 V2board 站点，从默认架构迁移 可以帮助您快速迁移架构以部署 Angela。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "演示"
-    ],
-    "pageType": "guide",
-    "title": "演示",
-    "section": "演示",
-    "route": "/introduction/demo",
-    "fragment": "演示",
-    "content": "蛋挞云 是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在 蛋挞云 亲自体验 Angela： 地址：https://eggtartcloud.shop/账号：trial@angela.com密码：angela-theme"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "设计"
-    ],
-    "pageType": "guide",
-    "title": "设计",
-    "section": "设计",
-    "route": "/introduction/design",
-    "fragment": "设计",
-    "content": "Angela 的 “精心设计” 并非纸上谈兵：每一个页面、每一处交互都有其相对应的设计稿。      "
   },
   {
     "breadcrumbs": [
@@ -644,6 +631,18 @@
   {
     "breadcrumbs": [
       "了解 Angela",
+      "演示"
+    ],
+    "pageType": "guide",
+    "title": "演示",
+    "section": "演示",
+    "route": "/introduction/demo",
+    "fragment": "演示",
+    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@workspace.com密码：angela-theme 「Sailing·风帆」是 Angela 的忠实用户，擅长应用 Angela 的各种高级特性。您可以通过以下账号信息在「Sailing·风帆」体验 Angela： 地址：https://www.sailingspeed.com/zh/账号：test@test.com密码：test@test.com"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
       "功能"
     ],
     "pageType": "guide",
@@ -656,14 +655,14 @@
   {
     "breadcrumbs": [
       "了解 Angela",
-      "概览"
+      "设计"
     ],
     "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "Angela，一款以用户体验为核心设计的 V2board Web 面板，由 Angular 驱动，汲取 Material Design 的设计精髓，为您的品牌注入独特的视觉语言。"
+    "title": "设计",
+    "section": "设计",
+    "route": "/introduction/design",
+    "fragment": "设计",
+    "content": "Angela 的 “精心设计” 并非纸上谈兵：每一个页面、每一处交互都有其相对应的设计稿。      "
   },
   {
     "breadcrumbs": [
@@ -675,19 +674,7 @@
     "section": "Angela：品牌专属的视觉语言",
     "route": "/introduction/overview",
     "fragment": "angela品牌专属的视觉语言",
-    "content": "Angela 正在向 v2.0 的里程碑迈进，用户界面设计存在大量变更。您可能会看到同一个页面的不同外观，但最终效果将以 设计 中规范的为准。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "Angela 具有以下核心优势："
+    "content": "Angela，一款以用户体验为核心设计的 V2board Web 面板，由 Angular 驱动，汲取 Material Design 的设计精髓，为您的品牌注入独特的视觉语言。 Angela 具有以下核心优势："
   },
   {
     "breadcrumbs": [
@@ -723,7 +710,31 @@
     "section": "Angela：品牌专属的视觉语言",
     "route": "/introduction/overview",
     "fragment": "angela品牌专属的视觉语言",
-    "content": "支持用户侧本地缓存： 首次加载时会在用户的本地浏览器中缓存所有资源，保证在后续访问时可以立即呈现页面内容 支持离线访问： 受益于本地缓存机制，用户在断网状态依然可以访问 Angela，但离线状态的用户体验目前还处于计划阶段 支持作为 App 安装到桌面： 在支持的浏览器中，Angela 可以作为 App 安装到用户桌面"
+    "content": "支持用户侧本地缓存： 首次加载时会在用户的本地浏览器中缓存所有资源，保证在后续访问时可以立即呈现页面内容 支持离线访问： 受益于本地缓存机制，用户在"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "断网状态"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：品牌专属的视觉语言",
+    "route": "/introduction/overview",
+    "fragment": "angela品牌专属的视觉语言",
+    "content": "依然可以访问 Angela。 支持作为 App 安装到桌面： 在支持的浏览器中，Angela 可以作为 App 安装到用户桌面"
   },
   {
     "breadcrumbs": [
@@ -740,61 +751,1885 @@
   {
     "breadcrumbs": [
       "获取 Angela",
-      "联系茶兔"
+      "授权方式"
     ],
     "pageType": "guide",
-    "title": "联系茶兔",
-    "section": "联系茶兔",
-    "route": "/purchase/contact-misstea2",
-    "fragment": "联系茶兔",
-    "content": "如果您对 Angela 有兴趣，请联系 茶兔，发送：“Angela 咨询”。"
+    "title": "授权方式",
+    "section": "授权方式",
+    "route": "/purchase/licensing",
+    "fragment": "授权方式",
+    "content": "Angela 采用 客户端离线授权 的授权方式，授权单位是 品牌 。 品牌 ： 品牌名称配色方案品牌Logo 每一份 Angela 资源包都是 品牌 特定的。品牌信息不支持自行更改。如果您需要更改品牌信息，请向我们申请重新打包。"
   },
   {
     "breadcrumbs": [
       "获取 Angela",
-      "联系茶兔"
+      "授权方式"
     ],
     "pageType": "guide",
-    "title": "联系茶兔",
-    "section": "联系茶兔",
-    "route": "/purchase/contact-misstea2",
-    "fragment": "联系茶兔",
-    "content": "Angela 的自助分发系统正在积极开发中"
+    "title": "授权方式",
+    "section": "授权方式",
+    "route": "/purchase/licensing",
+    "fragment": "授权方式",
+    "content": "Angela 不对域名做任何限制。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取更新"
+    ],
+    "pageType": "guide",
+    "title": "获取更新",
+    "section": "获取更新",
+    "route": "/purchase/upgrading",
+    "fragment": "获取更新",
+    "content": "只要持有有效的 Angela 授权，您便可以在任何时候向我们要求最新版本的 Angela 资源包。"
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "附加额外脚本/样式"
+      "附加脚本与样式"
     ],
     "pageType": "guide",
-    "title": "附加额外脚本/样式",
-    "section": "附加额外脚本/样式",
+    "title": "附加脚本与样式",
+    "section": "附加脚本与样式",
+    "route": "/recipes/add-scripts-and-styles",
+    "fragment": "附加脚本与样式",
+    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 extension.html 文件，如： zh/extension.htmlen/extension.html Angela 会在主体启动完成后尝试加载 extension.html，并将其中的所有内容都附加到 Angela 所在的页面内。 extension.html 中的： 内联脚本 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "附加脚本与样式"
+    ],
+    "pageType": "guide",
+    "title": "附加脚本与样式",
+    "section": "附加脚本与样式",
+    "route": "/recipes/add-scripts-and-styles",
+    "fragment": "附加脚本与样式",
+    "content": "..."
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "附加脚本与样式"
+    ],
+    "pageType": "guide",
+    "title": "附加脚本与样式",
+    "section": "附加脚本与样式",
+    "route": "/recipes/add-scripts-and-styles",
+    "fragment": "附加脚本与样式",
+    "content": " 将被执行远程脚本   将被加载并执行内联样式 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "附加脚本与样式"
+    ],
+    "pageType": "guide",
+    "title": "附加脚本与样式",
+    "section": "附加脚本与样式",
+    "route": "/recipes/add-scripts-and-styles",
+    "fragment": "附加脚本与样式",
+    "content": "..."
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "附加脚本与样式"
+    ],
+    "pageType": "guide",
+    "title": "附加脚本与样式",
+    "section": "附加脚本与样式",
+    "route": "/recipes/add-scripts-and-styles",
+    "fragment": "附加脚本与样式",
+    "content": " 将被应用到页面远程样式   将被加载并应用到页面其他 HTML 元素都将被附加到  末尾 通过 extension.html，您可以通过附加额外的样式来客制化 Angela 的外观，亦或是为 Angela 集成多种第三方服务。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "附加脚本与样式"
+    ],
+    "pageType": "guide",
+    "title": "附加脚本与样式",
+    "section": "附加脚本与样式",
+    "route": "/recipes/add-scripts-and-styles",
+    "fragment": "附加脚本与样式",
+    "content": "Angela 对一些常见的第三方服务实现了特殊的适配，详见： 集成 Crisp集成 Google Analytics"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "附加脚本与样式"
+    ],
+    "pageType": "guide",
+    "title": "附加脚本与样式",
+    "section": "附加脚本与样式",
+    "route": "/recipes/add-scripts-and-styles",
+    "fragment": "附加脚本与样式",
+    "content": "请不要对 index.html 做任何修改，这会破坏 Angela 的缓存机制，并可能导致 Angela 启动失败。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "您可以向 Angela 的导航系统中加入额外页面： 额外页面与 Angela 的导航系统高度集成： 额外页面在 Angela 的导航栏中拥有与 Angela 内置页面相同的导航按钮额外页面拥有与 Angela 内置页面无区别的路由 URL，如 https://example.com/my-page 额外页面的配置由 settings.yaml 中的 externalPages 字段负责："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "字段 描述 示例"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "name 页面在导航栏的名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "关于我们"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "path 页面在路由系统中的路径"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "about"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "about/me"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "icon 页面在导航栏的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": " 图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "info"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "url 页面内容的 iframe URL"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "assets/about.html"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "https://example.com/about"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置额外页面"
+    ],
+    "pageType": "guide",
+    "title": "配置额外页面",
+    "section": "配置额外页面",
+    "route": "/recipes/configure-external-pages",
+    "fragment": "配置额外页面",
+    "content": "额外页面是可选的。将 externalPages 字段及其下属字段全部删除或注释，即可禁用额外页面。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置首页图片"
+    ],
+    "pageType": "guide",
+    "title": "配置首页图片",
+    "section": "配置首页图片",
+    "route": "/recipes/configure-home-image",
+    "fragment": "配置首页图片",
+    "content": "Angela 的首页展示了一张图片，用于塑造品牌印象： 该图片由 settings.yaml 中的 homeImage 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "Angela 支持链接到多个平台的原生 App： 原生 App 链接由 settings.yaml 中的 nativeApps 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "platform App 的平台名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "link App 的下载链接"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "icon App 的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": " 图标或 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "平台图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "概念 可选值"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "平台图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "iWindows, iLinux, iAndroid, iApple"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "删除或注释 nativeApps 字段及其下属字段将完全禁用此功能。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "建议原生 App 链接不超过 5 个，以保证页面整洁并防止内容溢出。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "此外，Angela 还支持在原生 App 链接附近渲染一个帮助按钮，由 nativeAppsHelp 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "text 帮助按钮的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "link 要跳转的"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "站内"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "链接，如 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "/manuals/1"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取授权"
+    ],
+    "pageType": "guide",
+    "title": "获取授权",
+    "section": "获取授权",
+    "route": "/purchase/purchase",
+    "fragment": "获取授权",
+    "content": "我们采用加密货币 USDT 的收款方式。 如果您对 Angela 有兴趣，可以加入我们的社区群组，或者咨询茶兔。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "Angela 的默认配置已经包含了对主流代理客户端的导入支持："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "以上的设计稿并不代表实际的代理客户端支持范围。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "您可以通过 settings.yaml 中的 proxyClients 字段来进一步管理 Angela 的代理客户端支持列表。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "name 代理客户端的名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "scheme 用于导入订阅的 URL Scheme，可用 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "{}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": " 语法插入 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "URL Scheme 变量"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "platforms 支持的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "代理客户端平台"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "icon 可选 | "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": " 图标或 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "代理客户端图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "概念 可选值"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "代理客户端平台"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "desktop"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "android"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "ios"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "代理客户端图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "iClash"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "iSurfboard"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "iQuantumult"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "iShadowrocket"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "iSurge"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "iHiddify"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "URL Scheme 变量"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "详见下方表格"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "URL Scheme 变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "{url}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "订阅 URL"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "{url:base64}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "Base64 编码后的订阅 URL"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "{url:component}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "URI Component 编码后的订阅 URL"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "{name}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "品牌名"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "{name:component}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置代理客户端支持"
+    ],
+    "pageType": "guide",
+    "title": "配置代理客户端支持",
+    "section": "配置代理客户端支持",
+    "route": "/recipes/configure-proxy-clients",
+    "fragment": "配置代理客户端支持",
+    "content": "URI Component 编码后的品牌名"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "Telegram 相关卡片的文本内容是由 settings.yaml 中的 telegram 字段控制的："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "|- 是 YAML 的语法，用于输入多行文本。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "text 一般情况下的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "textBrief 窄屏布局下的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "{brand}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "品牌名"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置提醒阈值"
+    ],
+    "pageType": "guide",
+    "title": "配置提醒阈值",
+    "section": "配置提醒阈值",
+    "route": "/recipes/configure-thresholds",
+    "fragment": "配置提醒阈值",
+    "content": "Angela 依赖多个预先配置的 阈值 来判断用户是否接近某个状态，如： 当用户使用的流量超过百分之多少时，Angela 会认为该用户已经接近流量耗尽的状态。当用户的订阅剩余天数少于某个值时，Angela 会认为该用户的订阅即将到期。 这些阈值可以在 settings.yaml 中的 thresholds 字段中配置："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置提醒阈值"
+    ],
+    "pageType": "guide",
+    "title": "配置提醒阈值",
+    "section": "配置提醒阈值",
+    "route": "/recipes/configure-thresholds",
+    "fragment": "配置提醒阈值",
+    "content": "配置项 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置提醒阈值"
+    ],
+    "pageType": "guide",
+    "title": "配置提醒阈值",
+    "section": "配置提醒阈值",
+    "route": "/recipes/configure-thresholds",
+    "fragment": "配置提醒阈值",
+    "content": "suggestSupplementTraffic 提醒补充流量的阈值，单位是百分比，取值范围为 0 到 1"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置提醒阈值"
+    ],
+    "pageType": "guide",
+    "title": "配置提醒阈值",
+    "section": "配置提醒阈值",
+    "route": "/recipes/configure-thresholds",
+    "fragment": "配置提醒阈值",
+    "content": "suggestRenewSubscription 提醒续费订阅的阈值，单位是天数"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置工单等级显示文本"
+    ],
+    "pageType": "guide",
+    "title": "配置工单等级显示文本",
+    "section": "配置工单等级显示文本",
+    "route": "/recipes/configure-ticket-levels",
+    "fragment": "配置工单等级显示文本",
+    "content": "V2Board 支持三个工单等级：低优先级、中优先级 和 高优先级。 Angela 支持您将这些工单等级用于其他用途。您可以在 settings.yaml 中的 ticketLevels 字段中配置这三个工单等级的显示文本： 您或许可以用工单等级来进行工单分类："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 内置一个浏览器黑名单，用于引导用户转而使用更现代的浏览器，以获得更好的体验。 当用户使用的浏览器命中黑名单时，Angela 会在启动过程中弹出一个可关闭的弹窗，建议用户更换浏览器。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 不会阻止用户使用黑名单中的浏览器，只是提供一个友好的建议。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 的浏览器黑名单由 settings.yaml 中的 uaBlacklist 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "name 浏览器名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "match 用于匹配 UA 的正则表达式，可以是多个"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "message 弹窗的内容"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "{name}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "浏览器名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "Angela 的用户头像加载策略也是可配置的，由 settings.yaml 中的 userAvatarSources 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "match 用于匹配用户邮箱的正则表达式"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "source 用户头像地址"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "{email}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "用户邮箱"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "{email:hash}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "用户邮箱的 SHA256 哈希值"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置用户头像加载"
+    ],
+    "pageType": "guide",
+    "title": "配置用户头像加载",
+    "section": "配置用户头像加载",
+    "route": "/recipes/configure-user-avatars",
+    "fragment": "配置用户头像加载",
+    "content": "Angela 会依次匹配 userAvatarSources 中的每一项，直到找到一个匹配的项为止。 默认配置下： 若用户的邮箱地址以 @qq.com 结尾，则从 QQ 头像服务加载头像其他情况下，从 Gravatar 加载头像"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
     "route": "/recipes/extension-html",
-    "fragment": "附加额外脚本样式",
-    "content": "Angela 允许您附加额外的 HTML、脚本、和样式。 在每一个语言变体下，都存在一个 extension.html 文件。该文件会在 Angela 主体初始化完成后被加载，其包含的所有内容都将被加载进当前页面： 内联脚本将被执行远程脚本将被加载并执行样式将被附加到页面远程样式将被加载并附加到页面HTML 元素将被附加到  底部 您可以将 extension.html 视作 index.html 的一部分。通过 extension.html，您可以集成 Crisp、Cloudflare、Google Analytics 等多种第三方服务到 Angela。"
+    "fragment": "extensionhtml",
+    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 extension.html 文件，如： zh/extension.htmlen/extension.html Angela 会在主体启动完成后尝试加载 extension.html，并将其中的所有内容都附加到 Angela 所在的页面内。 extension.html 中的： 内联脚本 "
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "附加额外脚本/样式"
+      "extension.html"
     ],
     "pageType": "guide",
-    "title": "附加额外脚本/样式",
-    "section": "附加额外脚本/样式",
+    "title": "extension.html",
+    "section": "extension.html",
     "route": "/recipes/extension-html",
-    "fragment": "附加额外脚本样式",
-    "content": "请勿直接编辑 index.html，其可能拖慢甚至阻止 Angela 加载。"
+    "fragment": "extensionhtml",
+    "content": "..."
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "国际化"
+      "extension.html"
     ],
     "pageType": "guide",
-    "title": "国际化",
-    "section": "国际化",
-    "route": "/recipes/internationalization",
-    "fragment": "国际化",
-    "content": "Angela 采用的是编译时国际化的方案，最终的构建包中会包含应用多个语言的变体，如 zh 和 en。当用户访问 Angela 时，Angela 依赖服务器，如 Nginx 或 Apache，来根据用户的语言偏好设置自动重定向到适当的语言变体。 每个语言变体都拥有独立的配置文件，以此实现配置文件的国际化： zh/settings.yaml - zh 语言下的配置文件en/settings.yaml - en 语言下的配置文件 在编辑配置文件时，需要注意选择合适的语言变体。"
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/recipes/extension-html",
+    "fragment": "extensionhtml",
+    "content": " 将被执行远程脚本   将被加载并执行内联样式 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/recipes/extension-html",
+    "fragment": "extensionhtml",
+    "content": "..."
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/recipes/extension-html",
+    "fragment": "extensionhtml",
+    "content": " 将被应用到页面远程样式   将被加载并应用到页面其他 HTML 元素都将被附加到  末尾 通过 extension.html，您可以通过附加额外的样式来客制化 Angela 的外观，亦或是为 Angela 集成多种第三方服务。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "Material Symbols"
+    ],
+    "pageType": "guide",
+    "title": "Material Symbols",
+    "section": "Material Symbols",
+    "route": "/recipes/material-symbols",
+    "fragment": "material-symbols",
+    "content": "Material Symbols 是由 Google 设计的，适配 Material 设计系统的一套图标系统。 您可以在 Google Fonts 浏览全部的 Material Symbols 图标。 如果您需要在 settings.yaml 中使用 Material Symbols，请用下划线 _ 连接小写后的图标名称，如： Add -> addArrow Forward -> arrow_forward"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "渲染 Angela 控件",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "渲染-angela-控件",
+    "content": "Angela 的一部分控件以 自定义元素 的形式对外可用。 您可以在任何可以渲染 HTML 的地方渲染这些控件，包括但不限于：公告，使用文档，订阅描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "渲染 Angela 控件",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "渲染-angela-控件",
+    "content": "上图中，「Sailing·风帆」在使用文档中渲染了 Angela 的按钮。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": "属性 说明"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": "appearance 按钮的外观。可以是 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": "filled"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": "filled-tonal"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": "outlined"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": "text"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": " 中的任意一个"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": "icon 可选 | 按钮的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "按钮",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "按钮",
+    "content": " 图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "图标",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "图标",
+    "content": "属性 说明"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "图标",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "图标",
+    "content": "icon"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "图标",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "图标",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "图标",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "图标",
+    "content": " 图标名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "渲染 Angela 控件"
+    ],
+    "pageType": "guide",
+    "title": "渲染 Angela 控件",
+    "section": "图标",
+    "route": "/recipes/render-angela-elements",
+    "fragment": "图标",
+    "content": "size 可选 | 图标的尺寸，单位 pixel，默认 24"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/recipes/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 settings.yaml 文件，如： zh/settings.yamlen/settings.yaml 正如其名称所示，每个语言变体下的 settings.yaml 都负责保存该 Angela 语言变体的所有可配置项目。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "使用 Cloudflare Turnstile"
+    ],
+    "pageType": "guide",
+    "title": "使用 Cloudflare Turnstile",
+    "section": "使用 Cloudflare Turnstile",
+    "route": "/recipes/switch-to-cloudflare-turnstile",
+    "fragment": "使用-cloudflare-turnstile",
+    "content": "Angela 支持使用 Cloudflare Turnstile 作为人机验证服务： 要切换到 Cloudflare Turnstile，您首先需要对您的 V2board 实例进行一些更改： 随后，您只需要在 V2board 后台管理界面中，将 ReCaptcha 的 key 和 secret 都替换为 Cloudflare Turnstile 的 key 和 secret 即可。Angela 会自动适配人机验证服务商的更改。"
   }
 ]
