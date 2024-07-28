@@ -41,7 +41,7 @@
     "section": " 文件夹安装？",
     "route": "/faq",
     "fragment": "angela-是否支持拖拽进-themes-文件夹安装",
-    "content": "Angela 只支持以前后端分离的方式部署。详见 Angela 架构"
+    "content": "Angela 只支持以前后端分离的方式部署。详见 部署 Angela 资源包"
   },
   {
     "breadcrumbs": [
@@ -78,711 +78,1263 @@
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "Angela 架构"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "Angela 架构",
-    "section": "Angela 架构",
-    "route": "/deployment/infrastructure",
-    "fragment": "angela-架构",
-    "content": "默认架构下，V2board 同时扮演后端和前端的角色："
+    "title": "Angela Access Points",
+    "section": "Angela Access Points",
+    "route": "/fundamentals/access-points",
+    "fragment": "angela-access-points",
+    "content": "Angela 对外部暴露了许多 Access Points，以便通过外部脚本拓展 Angela。 Access Point 是暴露在 window 对象上的函数。对于 Access Point getUser，可以通过 window.getUser() 来调用。 Access Points 可以是全局的或是局部的： 全局的 Access Points 在每个页面上都可用局部的 Access Points 仅在特定视图中可用，如帮助文档"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "Angela 架构"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "Angela 架构",
-    "section": "Angela 架构",
-    "route": "/deployment/infrastructure",
-    "fragment": "angela-架构",
-    "content": "对于 "
+    "title": "Angela Access Points",
+    "section": "watchCommands",
+    "route": "/fundamentals/access-points",
+    "fragment": "watchcommands",
+    "content": "返回一个 Observable，Angela 内部触发 Command 时会输出该 Command 对象。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "Angela 架构"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "Angela 架构",
-    "section": "Angela 架构",
-    "route": "/deployment/infrastructure",
-    "fragment": "angela-架构",
-    "content": "/"
+    "title": "Angela Access Points",
+    "section": "watchEvents",
+    "route": "/fundamentals/access-points",
+    "fragment": "watchevents",
+    "content": "返回一个 Observable，Angela 内部触发 Event 时会输出该 Event 对象。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "Angela 架构"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "Angela 架构",
-    "section": "Angela 架构",
-    "route": "/deployment/infrastructure",
-    "fragment": "angela-架构",
-    "content": " 路径的请求，V2board 调用其模板引擎填充前端配置，并返回前端资源文件 对于 "
+    "title": "Angela Access Points",
+    "section": "readCommandMetadata",
+    "route": "/fundamentals/access-points",
+    "fragment": "readcommandmetadata",
+    "content": "接受一个 Command 对象，返回该 Command 对象的元数据。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "Angela 架构"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "Angela 架构",
-    "section": "Angela 架构",
-    "route": "/deployment/infrastructure",
-    "fragment": "angela-架构",
-    "content": "/api/*"
+    "title": "Angela Access Points",
+    "section": "readEventMetadata",
+    "route": "/fundamentals/access-points",
+    "fragment": "readeventmetadata",
+    "content": "接受一个 Event 对象，返回该 Event 对象的元数据。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "Angela 架构"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "Angela 架构",
-    "section": "Angela 架构",
-    "route": "/deployment/infrastructure",
-    "fragment": "angela-架构",
-    "content": " 路径的请求，V2board 执行相对应的逻辑，扮演后端的角色"
+    "title": "Angela Access Points",
+    "section": "queryAuthToken",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryauthtoken",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的认证 token如果用户未登入，会立即输出 null 用户登入状态发生变化时，会输出新的值。 用户的认证 token 可用于调用 v2board 受保护的 API。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "Angela 架构"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "Angela 架构",
-    "section": "Angela 架构",
-    "route": "/deployment/infrastructure",
-    "fragment": "angela-架构",
-    "content": "出于对多种因素的考虑，Angela 只支持通过前后端分离的方式部署。V2board 只需承担后端的职责，Angela 将会作为一个静态站点担任前端： 用户的所有请求都会由部署了 Angela 的前端站点处理用户加载 Angela 后，Angela 会向部署了 V2board 的后端站点请求数据 假设 Angela 部署在 https://example.org，V2board 部署在 https://v2board.example.org，用户的浏览器会产生类似如下的请求： 若您不希望使用多个域名，也可以通过使用反向代理，将对于 Angela 站点 /api/ 路径的请求委托给 V2board 站点处理。 沿用上面的例子，通过配置反向代理，所有对于 https://example.org/api/ 的请求都将会被委托给 https://v2board.example.org/api/ 处理。这种情况下，用户的浏览器会产生类似如下的请求： 如果您已经使用 aaPanel 搭建了 V2board 站点，从默认架构迁移 可以帮助您快速迁移架构以部署 Angela。"
+    "title": "Angela Access Points",
+    "section": "queryUser",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryuser",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户信息如果用户未登入，会等待用户登入后输出用户信息 用户信息发生变化时，会输出新的值。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "从默认架构迁移",
-    "route": "/deployment/migration",
-    "fragment": "从默认架构迁移",
-    "content": "如果您已经使用 aaPanel 搭建了一个 V2board 站点，这篇教程可以帮助您快速迁移架构以适配 Angela。"
+    "title": "Angela Access Points",
+    "section": "queryUserPlan",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryuserplan",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的订阅计划信息如果用户未登入，会立即输出 null 用户或订阅计划信息发生变化时，会输出新的值。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "Angela 基础",
+      "Angela Access Points"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "从默认架构迁移",
-    "route": "/deployment/migration",
-    "fragment": "从默认架构迁移",
+    "title": "Angela Access Points",
+    "section": "copy",
+    "route": "/fundamentals/access-points",
+    "fragment": "copy",
+    "content": "复制文本到剪贴板并提示。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "jump",
+    "route": "/fundamentals/access-points",
+    "fragment": "jump",
+    "content": "跳转到指定 id 的帮助文档"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "showSubscriptionDetail",
+    "route": "/fundamentals/access-points",
+    "fragment": "showsubscriptiondetail",
+    "content": "显示订阅详情对话框"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "installSubscription",
+    "route": "/fundamentals/access-points",
+    "fragment": "installsubscription",
+    "content": "导入订阅到指定代理客户端并提示。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "installSubscription",
+    "route": "/fundamentals/access-points",
+    "fragment": "installsubscription",
+    "content": "你可以 settings.yaml 中的 proxyClients 字段中找到代理客户端的 name。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "Angela Elements",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "angela-elements",
+    "content": "Angela 的一部分控件以 自定义元素 的形式对外可用。这些自定义元素被称为 Angela Elements。 您可以在任何可以渲染 HTML 的地方使用 Angela Elements，包括但不限于：公告，帮助文档，订阅描述"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "Angela Elements",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "angela-elements",
+    "content": "上图中，「Sailing·风帆」在帮助文档中渲染了 Angela 的按钮。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": "属性 说明"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": "appearance 按钮的外观。可以是 "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": "filled"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": "filled-tonal"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": "outlined"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": ", "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": "text"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": " 中的任意一个"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": "icon 可选 | 按钮的 "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "按钮",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "按钮",
+    "content": " 图标"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "图标",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "图标",
+    "content": "属性 说明"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "图标",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "图标",
+    "content": "icon"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "图标",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "图标",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "图标",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "图标",
+    "content": " 图标名称"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Elements"
+    ],
+    "pageType": "guide",
+    "title": "Angela Elements",
+    "section": "图标",
+    "route": "/fundamentals/angela-elements",
+    "fragment": "图标",
+    "content": "size 可选 | 图标的尺寸，单位 pixel，默认 24"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 extension.html 文件，如： zh/extension.htmlen/extension.html Angela 会在主体启动完成后尝试加载 extension.html，并将其中的所有内容都附加到 Angela 所在的页面内。 extension.html 中的： 内联脚本 "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": "..."
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": " 将被执行远程脚本   将被加载并执行内联样式 "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": "..."
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": " 将被应用到页面远程样式   将被加载并应用到页面其他 HTML 元素都将被附加到  末尾 通过 extension.html，您可以通过附加额外的样式来客制化 Angela 的外观，亦或是为 Angela 集成多种第三方服务。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Observable"
+    ],
+    "pageType": "guide",
+    "title": "Observable",
+    "section": "Observable",
+    "route": "/fundamentals/observable",
+    "fragment": "observable",
+    "content": "Observable 是 Reactive X 响应式编程的核心概念。它是一个可观察的对象，可以在未来的某个时间点发出一个或多个值。 在 JavaScript 中，Observable 由 RxJS 库实现。您可以在 RxJS 的官方文档中了解更多关于 Observable 的信息：https://rxjs.dev/guide/observable 许多 Angela Access Points 会返回 Observable。对于一个 Observable，您可以通过其 subscribe 方法来订阅它，以便在它发出值时执行一些操作。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 settings.yaml 文件，如： zh/settings.yamlen/settings.yaml 正如其名称所示，每个语言变体下的 settings.yaml 都负责保存该 Angela 语言变体的所有可配置项目。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "Demo"
+    ],
+    "pageType": "guide",
+    "title": "Demo",
+    "section": "Demo",
+    "route": "/introduction/demo",
+    "fragment": "demo",
+    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@workspace.com密码：angela-theme 「Sailing·风帆」是 Angela 的忠实用户，擅长应用 Angela 的各种高级特性。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "Demo"
+    ],
+    "pageType": "guide",
+    "title": "Demo",
+    "section": "Demo",
+    "route": "/introduction/demo",
+    "fragment": "demo",
+    "content": "为保证客户站点安全，「Sailing·风帆」暂不提供公开体验账号。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：重新思考 V2board",
+    "route": "/introduction/overview",
+    "fragment": "angela重新思考-v2board",
+    "content": "Angela 是一款以用户体验为核心，且高度可配置、可拓展的新一代 V2board Web 面板。 Angela 是对 V2board 的一次重新思考：我们不愿再做一款布局相似、功能相近的 V2board Web 面板。通过 Angela，我们希望为用户提供一种全新的、符合人体工学的用户体验。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "独一无二的品牌形象",
+    "route": "/introduction/overview",
+    "fragment": "独一无二的品牌形象",
+    "content": "通过 Angela，我们致力于避免千篇一律的品牌形象：使用同一款 V2board Web 面板的不同商家总是看起来相仿。通过 Angela 的独家配色算法和高度可配置的用户界面，您可以通过您的专属配色方案和界面配置，为用户留下独一无二的品牌印象。 我们希望 Angela 能够成为您的品牌形象的一部分，而不仅仅是一个 V2board Web 面板。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "人体工学的用户体验",
+    "route": "/introduction/overview",
+    "fragment": "人体工学的用户体验",
+    "content": "我们花费了大量精力将 Angela 打造成了一个包容性极强的 Web 面板：无论你使用的是手机、平板、笔记本还是台式机，无论你的屏幕朝向是横屏还是竖屏，无论你是一般用户还是残障人士，Angela 高细粒度的响应式布局和精心实现的无障碍功能能为您提供同水准的用户体验。 我们完全理解越来越多的用户对有质感的界面交互的追求，简单的、一闪而过的控件交互和页面切换愈发显得枯燥乏味。因此，我们为 Angela 实现了丰富且丝滑的界面动效，为您的用户带来焕然一新而令人难忘的的交互体验。 我们切身体会到等待加载的痛苦。得益于前沿的 Web 技术，我们通过本地缓存技术将 Angela 的加载速度提升了到极致。只要用户访问过一次 Angela，任何时候再次访问时将会立即呈现页面内容，无需等待。与此同时，Angela 还支持离线访问，即使在断网状态下，用户依然可以启动 Angela 并查看上次加载的数据。 此外，Angela 还实现了 渐进式应用（PWA） 技术，用户可以将 Angela “安装” 到桌面，像使用原生应用一样使用 Angela。安装 Angela 后，Angela 的视图会在独立的窗口中呈现，且用户可选择： 将 Angela 固定到任务栏将 Angela 固定到开始菜单为 Angela 创建桌面快捷方式在开机时自启动 Angela"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "开放且可拓展的架构",
+    "route": "/introduction/overview",
+    "fragment": "开放且可拓展的架构",
+    "content": "与其他 V2board Web 面板不同，Angela 的架构是开放且可拓展的。我们对外开放的 Angela Access Points 和 extension.html 允许您对 Angela 进行二次开发，实现对 Angela 的进阶控制和监控，或是实现与第三方的深度集成。 集成 Crisp集成 Google Analytics"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "部署 Angela 资源包"
+    ],
+    "pageType": "guide",
+    "title": "部署 Angela 资源包",
+    "section": "部署 Angela 资源包",
+    "route": "/obtain/deploy",
+    "fragment": "部署-angela-资源包",
+    "content": "这篇教程将会帮助您将现有的 V2board 架构迁移至 Angela 所需的前后端分离架构，并部署您的 Angela 资源包。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "部署 Angela 资源包"
+    ],
+    "pageType": "guide",
+    "title": "部署 Angela 资源包",
+    "section": "部署 Angela 资源包",
+    "route": "/obtain/deploy",
+    "fragment": "部署-angela-资源包",
     "content": "在阅读这篇教程前，清确保"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "从默认架构迁移",
-    "route": "/deployment/migration",
-    "fragment": "从默认架构迁移",
-    "content": "您已经搭建了一个 V2board 站点 当前的 V2board 站点可以通过 HTTPS 协议访问 您拥有一定的 aaPanel/宝塔面板 的运维经验"
+    "title": "部署 Angela 资源包",
+    "section": "部署 Angela 资源包",
+    "route": "/obtain/deploy",
+    "fragment": "部署-angela-资源包",
+    "content": "您已经获取了一份 Angela 资源包 您已经搭建了一个 V2board 站点 当前的 V2board 站点可以通过 HTTPS 协议访问 您拥有一定的 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "从默认架构迁移",
-    "route": "/deployment/migration",
-    "fragment": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
+    "section": "部署 Angela 资源包",
+    "route": "/obtain/deploy",
+    "fragment": "部署-angela-资源包",
+    "content": "aaPanel"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "部署 Angela 资源包"
+    ],
+    "pageType": "guide",
+    "title": "部署 Angela 资源包",
+    "section": "部署 Angela 资源包",
+    "route": "/obtain/deploy",
+    "fragment": "部署-angela-资源包",
+    "content": "/宝塔面板 的运维经验"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "部署 Angela 资源包"
+    ],
+    "pageType": "guide",
+    "title": "部署 Angela 资源包",
+    "section": "部署 Angela 资源包",
+    "route": "/obtain/deploy",
+    "fragment": "部署-angela-资源包",
     "content": "在这篇教程中，我们假设： 当前已经存在的 V2board 站点名为 best-vpn.org当前已经存在的 V2board 站点绑定了域名 best-vpn.org 我们定义： 后端站点：V2board 所在的站点（已存在）前端站点：Angela 所在的站点（还不存在）"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "Angela 要求前后端分离的架构，而 V2board 目前同时担任着前端和后端。因此，我们需要 V2board 将前端让给 Angela —— 我们需要 V2board 所在的后端站点将 best-vpn.org 这个域名让给我们后续要创建的前端站点："
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "双击后端站点 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "best-vpn.org"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "，进入站点详情界面 新增绑定 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "v2board.best-vpn.org"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": " 和 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "127.0.0.1:4321"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "移除绑定 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "best-vpn.org"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "如果您不希望使用反向代理，则不需要绑定 127.0.0.1:4321"
-  },
-  {
-    "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
-    ],
-    "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "1. 更新后端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "1-更新后端站点域名绑定",
     "content": "如果先前的 SSL 证书不包含 v2board.best-vpn.org，我们需要获取新的证书。建议备份旧的证书：在后续的步骤中，我们后续要创建的前端站点将会绑定 best-vpn.org 并可以用上这份证书。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "2. 创建前端站点",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "2-创建前端站点",
     "content": "我们需要创建一个新的站点作为前端站点，用于服务 Angela 的资源文件： 在域名处，我们填写了 best-vpn.gateway 这个不存在的域名，这是因为站点名 best-vpn.org 已被我们现有的 V2board 站点占用，我们需要用一个不一样的名字以避免名称冲突。best-vpn.gateway、best-vpn.entry、best-vpn.frontend 等都是不错的选择。 不用担心，这并不意味着我们最终必须使用 best-vpn.gateway 作为这个站点的域名。我们会在后续的步骤中更正该站点的域名绑定。 另外，我们需要把 PHP 版本 选择为 纯静态。这是因为我们要创建的是一个前端站点。我们只需要这个站点能够正确返回请求的静态资源即可，并不需要 PHP。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "3. 更正前端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "3-更正前端站点域名绑定",
     "content": "双击后端站点 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "3. 更正前端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "3-更正前端站点域名绑定",
     "content": "best-vpn.gateway"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "3. 更正前端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "3-更正前端站点域名绑定",
     "content": "，进入站点详情界面 新增绑定 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "3. 更正前端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "3-更正前端站点域名绑定",
     "content": "best-vpn.org"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "3. 更正前端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "3-更正前端站点域名绑定",
     "content": "移除绑定 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "3. 更正前端站点域名绑定",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "3-更正前端站点域名绑定",
     "content": "best-vpn.gateway"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "4. 启用前端站点 HTTPS",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "4-启用前端站点-https",
     "content": "如果先前备份了后端站点的旧 SSL 证书，由于域名相同，我们可以直接使用备份的证书： 若未备份，则需要按常规流程申请新的证书。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "5. 修改前端站点配置文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "5-修改前端站点配置文件",
     "content": "接下来，我们需要转到 “配置文件” 页面，对站点的 Nginx 配置文件进行一些必要的修改："
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "5. 修改前端站点配置文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "5-修改前端站点配置文件",
     "content": "在配置文件的最开头，"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "5. 修改前端站点配置文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "5-修改前端站点配置文件",
     "content": "server"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "5. 修改前端站点配置文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "5-修改前端站点配置文件",
     "content": " 的前面，插入以下配置： 在配置文件的中间部分，"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "5. 修改前端站点配置文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "5-修改前端站点配置文件",
     "content": "root"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "5. 修改前端站点配置文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "5-修改前端站点配置文件",
     "content": " 的下一行，插入以下配置："
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "5. 修改前端站点配置文件",
-    "route": "/deployment/migration",
-    "fragment": "5-修改前端站点配置文件",
-    "content": "如果您不希望使用反向代理，可以忽略上面的 location /api 配置。"
-  },
-  {
-    "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
-    ],
-    "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "6. 上传 Angela 资源文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "6-上传-angela-资源文件",
-    "content": "至此，前端站点已经基本配置完毕，最后只需将 Angela 的资源文件上传到前端站点，即可完成 Angela 的全部准备工作。"
+    "content": "至此，前端站点已经基本配置完毕，最后只需将 Angela 资源包的内容上传到前端站点，即可完成 Angela 的全部准备工作。"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "6. 上传 Angela 资源文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "6-上传-angela-资源文件",
     "content": "进入前端站点根目录 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "6. 上传 Angela 资源文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "6-上传-angela-资源文件",
     "content": "/www/wwwroot/best-vpn.gateway"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "6. 上传 Angela 资源文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "6-上传-angela-资源文件",
     "content": "上传 Angela 资源包并解压 将 "
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "6. 上传 Angela 资源文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "6-上传-angela-资源文件",
     "content": "browser"
   },
   {
     "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
+      "获取 Angela",
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "从默认架构迁移",
+    "title": "部署 Angela 资源包",
     "section": "6. 上传 Angela 资源文件",
-    "route": "/deployment/migration",
+    "route": "/obtain/deploy",
     "fragment": "6-上传-angela-资源文件",
-    "content": " 文件夹内的所有内容移动到站点根目录下 (可选) 移除多余的文件/文件夹"
-  },
-  {
-    "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
-    ],
-    "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "常见问题",
-    "route": "/deployment/migration",
-    "fragment": "常见问题",
-    "content": "我该如何访问 V2board 管理后台？ 通过后端域名访问即可，如 "
-  },
-  {
-    "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
-    ],
-    "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "常见问题",
-    "route": "/deployment/migration",
-    "fragment": "常见问题",
-    "content": "https://v2board.best-vpn.org/abcdefg/"
-  },
-  {
-    "breadcrumbs": [
-      "部署 Angela",
-      "从默认架构迁移"
-    ],
-    "pageType": "guide",
-    "title": "从默认架构迁移",
-    "section": "常见问题",
-    "route": "/deployment/migration",
-    "fragment": "常见问题",
-    "content": "为什么 Angela 卡在了转圈圈的界面？ Angela 无法从 V2board 获取数据，请跟随教程检查站点配置"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "演示"
-    ],
-    "pageType": "guide",
-    "title": "演示",
-    "section": "演示",
-    "route": "/introduction/demo",
-    "fragment": "演示",
-    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@workspace.com密码：angela-theme 「Sailing·风帆」是 Angela 的忠实用户，擅长应用 Angela 的各种高级特性。您可以通过以下账号信息在「Sailing·风帆」体验 Angela： 地址：https://www.sailingspeed.com/zh/账号：test@test.com密码：test@test.com"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "功能"
-    ],
-    "pageType": "guide",
-    "title": "功能",
-    "section": "功能",
-    "route": "/introduction/features",
-    "fragment": "功能",
-    "content": "经过无数版本的迭代，Angela 已经相当成熟，包含了运营代理服务所需的绝大部分功能，包括但不限于： 用户注册、登入账号密码重置邮箱验证码重发ReCaptcha/Turnstile 人机验证使用 Token 登录（对接第三方客户端）从 Gravatar 和 QQ 获取的用户头像公告显示、弹出套餐显示、筛选、购买订单显示、检视、筛选、取消订单跳转外部收银台支付/二维码支付优惠卷校验、使用订阅链接复制/显示二维码订阅导入至代理客户端订阅节点及状态显示订阅流量使用情况显示帮助文档渲染、排版copy() 和 jump() 全局函数的支持Angela 控件在 Markdown/HTML 中的渲染聊天式的工单系统可自定义的工单优先级文字佣金及账户余额的显示佣金系统的信息显示佣金的划转以及提现返佣记录的显示邀请码的显示、复制、生成Telegram 群组链接Telegram Bot 绑定引导额外脚本/样式的支持Crisp 以及 Google Analytics 支持国际化/多语言支持"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "设计"
-    ],
-    "pageType": "guide",
-    "title": "设计",
-    "section": "设计",
-    "route": "/introduction/design",
-    "fragment": "设计",
-    "content": "Angela 的 “精心设计” 并非纸上谈兵：每一个页面、每一处交互都有其相对应的设计稿。      "
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "Angela，一款以用户体验为核心设计的 V2board Web 面板，由 Angular 驱动，汲取 Material Design 的设计精髓，为您的品牌注入独特的视觉语言。 Angela 具有以下核心优势："
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "完全动态生成的配色方案: 利用 Angela 独家的配色算法，基于任意种子色，打造最贴合品牌形象的专属配色方案 四种精心设计的布局方案: 适配手机、平板、笔记本、台式机的任意屏幕朝向，在任何设备上提供同水准的用户体验 丝滑流畅的交互设计： 通过精心打磨的界面动效，留下最深刻的品牌印象，传递以用户为中心的品牌态度"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "为了确保最优质的用户体验，Angela 以 PWA - 渐进式 Web 应用 的形态呈现。相较于传统的 Web 应用，PWA："
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "支持用户侧本地缓存： 首次加载时会在用户的本地浏览器中缓存所有资源，保证在后续访问时可以立即呈现页面内容 支持离线访问： 受益于本地缓存机制，用户在"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "断网状态"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "依然可以访问 Angela。 支持作为 App 安装到桌面： 在支持的浏览器中，Angela 可以作为 App 安装到用户桌面"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：品牌专属的视觉语言",
-    "route": "/introduction/overview",
-    "fragment": "angela品牌专属的视觉语言",
-    "content": "当 Angela 作为 App 安装后，应用会在独立的窗口中呈现，此时用户可选择： 将 Angela 固定到任务栏将 Angela 固定到开始菜单为 Angela 创建桌面快捷方式在开机时自启动 Angela"
+    "content": " 文件夹内的所有内容移动到站点根目录下 移除多余的文件/文件夹"
   },
   {
     "breadcrumbs": [
       "获取 Angela",
-      "授权方式"
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "授权方式",
-    "section": "授权方式",
-    "route": "/purchase/licensing",
-    "fragment": "授权方式",
-    "content": "Angela 采用 客户端离线授权 的授权方式，授权单位是 品牌 。 品牌 ： 品牌名称配色方案品牌Logo 每一份 Angela 资源包都是 品牌 特定的。品牌信息不支持自行更改。如果您需要更改品牌信息，请向我们申请重新打包。"
+    "title": "部署 Angela 资源包",
+    "section": "我该如何访问 V2board 管理后台？",
+    "route": "/obtain/deploy",
+    "fragment": "我该如何访问-v2board-管理后台",
+    "content": "通过后端域名访问即可，如 https://v2board.best-vpn.org/abcdefg/ 该后端域名只有您自己知道，用户是通过前端域名的反代规则访问后端的。"
   },
   {
     "breadcrumbs": [
       "获取 Angela",
-      "授权方式"
+      "部署 Angela 资源包"
     ],
     "pageType": "guide",
-    "title": "授权方式",
-    "section": "授权方式",
-    "route": "/purchase/licensing",
-    "fragment": "授权方式",
-    "content": "Angela 不对域名做任何限制。"
+    "title": "部署 Angela 资源包",
+    "section": "为什么 Angela 报错页面加载失败？",
+    "route": "/obtain/deploy",
+    "fragment": "为什么-angela-报错页面加载失败",
+    "content": "Angela 无法从后端获取数据，请跟随教程检查反代配置。"
   },
   {
     "breadcrumbs": [
       "获取 Angela",
-      "获取更新"
+      "获取 Angela 使用许可"
     ],
     "pageType": "guide",
-    "title": "获取更新",
-    "section": "获取更新",
-    "route": "/purchase/upgrading",
-    "fragment": "获取更新",
-    "content": "只要持有有效的 Angela 授权，您便可以在任何时候向我们要求最新版本的 Angela 资源包。"
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "要使用 Angela，您需要首先取得 Angela 使用许可 。 Angela 使用许可 的期限是 永久 。Angela 使用许可 的对象是 品牌 。 品牌 包含以下信息： 品牌名称配色方案品牌 Logo"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "只要您持有一个品牌的 Angela 使用许可，您便可以在任何域名下部署该品牌的 Angela。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "如果您拥有多个品牌，您需要为每一个品牌都获取一份 Angela 使用许可。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "凭借品牌的 Angela 使用许可，您可以在任何时候向我们索取该品牌的最新版本的 Angela 资源包 。Angela 资源包包含了您需要部署 Angela 的所有文件。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "Angela 资源包是与品牌绑定的。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取方式",
+    "route": "/obtain/purchase",
+    "fragment": "获取方式",
+    "content": "如果您对 Angela 使用许可有兴趣，请联系我们的客户服务代表： @茶兔"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取方式",
+    "route": "/obtain/purchase",
+    "fragment": "获取方式",
+    "content": "我们只接受加密货币 USDT 作为支付方式。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "Angela 使用许可是如何验证的？",
+    "route": "/obtain/purchase",
+    "fragment": "angela-使用许可是如何验证的",
+    "content": "Angela 采用 用户侧本地验证 的许可验证方式： 许可验证在用户侧进行许可验证无需连接服务器"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "我可以更改品牌信息吗？",
+    "route": "/obtain/purchase",
+    "fragment": "我可以更改品牌信息吗",
+    "content": "如果您需要更改品牌信息，请向我们登记更改并获取新的 Angela 资源包 。 如果您放弃了原先的品牌并创建了独立的新品牌，请为新品牌购买新的 Angela 使用许可。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "Angela 发布新版本了，我可以更新吗？",
+    "route": "/obtain/purchase",
+    "fragment": "angela-发布新版本了我可以更新吗",
+    "content": "是的，您可以随时向我们索取最新版本的 Angela 资源包。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "为帮助文档增添交互性",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "为帮助文档增添交互性",
+    "content": "您可以通过 Angela Elements 在帮助文档中渲染各种 Angela 控件： 然而，渲染出的控件默认并不会对用户的交互作出反应。 要使这些控件具备可交互性，您可以监听这些控件的 click 事件："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "为帮助文档增添交互性",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "为帮助文档增添交互性",
+    "content": "alert 是浏览器的内置函数，用于弹出一个警告框。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "Access Points",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "access-points",
+    "content": "额外的 Angela Access Points [帮助文档 Access Points] 在帮助文档内可用。这些由 Angela 提供的函数可以为您的帮助文档带来更多可能性："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "Access Points",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "access-points",
+    "content": "showSubscriptionDetail 是一个 Angela Access Point。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "变量",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "变量",
+    "content": "在帮助文档中，您可以使用 {} 语法来插入变量："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "变量",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "变量",
+    "content": "copy 是一个 Angela Access Point。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "变量",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "变量",
+    "content": "变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "变量",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "变量",
+    "content": "{subscription:url}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "变量",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "变量",
+    "content": "订阅链接"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "变量",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "变量",
+    "content": "{subscription:url:base64}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "为帮助文档增添交互性"
+    ],
+    "pageType": "guide",
+    "title": "为帮助文档增添交互性",
+    "section": "变量",
+    "route": "/recipes/add-interactivity-to-manuals",
+    "fragment": "变量",
+    "content": "Base64 编码后的订阅链接"
   },
   {
     "breadcrumbs": [
@@ -1323,18 +1875,6 @@
     "route": "/recipes/configure-native-apps",
     "fragment": "配置原生-app-链接",
     "content": "/manuals/1"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取授权"
-    ],
-    "pageType": "guide",
-    "title": "获取授权",
-    "section": "获取授权",
-    "route": "/purchase/purchase",
-    "fragment": "获取授权",
-    "content": "我们采用加密货币 USDT 的收款方式。 如果您对 Angela 有兴趣，可以加入我们的社区群组，或者咨询茶兔。"
   },
   {
     "breadcrumbs": [
@@ -2054,7 +2594,7 @@
     "section": "配置工单等级显示文本",
     "route": "/recipes/configure-ticket-levels",
     "fragment": "配置工单等级显示文本",
-    "content": "V2Board 支持三个工单等级：低优先级、中优先级 和 高优先级。 Angela 支持您将这些工单等级用于其他用途。您可以在 settings.yaml 中的 ticketLevels 字段中配置这三个工单等级的显示文本： 您或许可以用工单等级来进行工单分类："
+    "content": "V2Board 支持三个工单等级：低优先级、中优先级 和 高优先级： Angela 支持您将这些工单等级用于其他用途。您可以在 settings.yaml 中的 ticketLevels 字段中配置这三个工单等级的显示文本： 您或许可以用工单等级来进行工单分类："
   },
   {
     "breadcrumbs": [
@@ -2299,62 +2839,74 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "extension.html"
+      "集成 Crisp"
     ],
     "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/recipes/extension-html",
-    "fragment": "extensionhtml",
-    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 extension.html 文件，如： zh/extension.htmlen/extension.html Angela 会在主体启动完成后尝试加载 extension.html，并将其中的所有内容都附加到 Angela 所在的页面内。 extension.html 中的： 内联脚本 "
+    "title": "集成 Crisp",
+    "section": "集成 Crisp",
+    "route": "/recipes/integrate-with-crisp",
+    "fragment": "集成-crisp",
+    "content": "在 extension.html 中添加 Crisp 相关的 "
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "extension.html"
+      "集成 Crisp"
     ],
     "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/recipes/extension-html",
-    "fragment": "extensionhtml",
-    "content": "..."
+    "title": "集成 Crisp",
+    "section": "集成 Crisp",
+    "route": "/recipes/integrate-with-crisp",
+    "fragment": "集成-crisp",
+    "content": " 即可为 Angela 启用 Crisp。</p>"
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "extension.html"
+      "集成 Crisp"
     ],
     "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/recipes/extension-html",
-    "fragment": "extensionhtml",
-    "content": " 将被执行远程脚本   将被加载并执行内联样式 "
+    "title": "集成 Crisp",
+    "section": "集成 Crisp",
+    "route": "/recipes/integrate-with-crisp",
+    "fragment": "集成-crisp",
+    "content": "此外，通过 Angela Access Points ，Crisp 会话可以携带更多的上下文信息。 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Crisp 集成："
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "extension.html"
+      "集成 Google Analytics"
     ],
     "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/recipes/extension-html",
-    "fragment": "extensionhtml",
-    "content": "..."
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": "在 extension.html 中添加 Google Analytics 相关的 "
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "extension.html"
+      "集成 Google Analytics"
     ],
     "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/recipes/extension-html",
-    "fragment": "extensionhtml",
-    "content": " 将被应用到页面远程样式   将被加载并应用到页面其他 HTML 元素都将被附加到  末尾 通过 extension.html，您可以通过附加额外的样式来客制化 Angela 的外观，亦或是为 Angela 集成多种第三方服务。"
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": " 即可为 Angela 启用 Google Analytics。</p>"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "集成 Google Analytics"
+    ],
+    "pageType": "guide",
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": "此外，通过 Angela Access Points ，Google Analytics 可以收集细粒度更高的用户行为数据 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Google Analytics 集成："
   },
   {
     "breadcrumbs": [
@@ -2378,7 +2930,7 @@
     "section": "渲染 Angela 控件",
     "route": "/recipes/render-angela-elements",
     "fragment": "渲染-angela-控件",
-    "content": "Angela 的一部分控件以 自定义元素 的形式对外可用。 您可以在任何可以渲染 HTML 的地方渲染这些控件，包括但不限于：公告，使用文档，订阅描述"
+    "content": "Angela 的一部分控件以 自定义元素 的形式对外可用。这些自定义元素被称为 Angela Elements。 您可以在任何可以渲染 HTML 的地方使用 Angela Elements，包括但不限于：公告，帮助文档，订阅描述"
   },
   {
     "breadcrumbs": [
@@ -2390,7 +2942,7 @@
     "section": "渲染 Angela 控件",
     "route": "/recipes/render-angela-elements",
     "fragment": "渲染-angela-控件",
-    "content": "上图中，「Sailing·风帆」在使用文档中渲染了 Angela 的按钮。"
+    "content": "上图中，「Sailing·风帆」在帮助文档中渲染了 Angela 的按钮。"
   },
   {
     "breadcrumbs": [
@@ -2607,18 +3159,6 @@
     "route": "/recipes/render-angela-elements",
     "fragment": "图标",
     "content": "size 可选 | 图标的尺寸，单位 pixel，默认 24"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "settings.yaml"
-    ],
-    "pageType": "guide",
-    "title": "settings.yaml",
-    "section": "settings.yaml",
-    "route": "/recipes/settings-yaml",
-    "fragment": "settingsyaml",
-    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 settings.yaml 文件，如： zh/settings.yamlen/settings.yaml 正如其名称所示，每个语言变体下的 settings.yaml 都负责保存该 Angela 语言变体的所有可配置项目。"
   },
   {
     "breadcrumbs": [
