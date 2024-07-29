@@ -1,1 +1,0 @@
-import"./chunk-ODN5LVDJ.js";var t=[{path:"",redirectTo:"demo",pathMatch:"full"},{path:"",title:"\u4E86\u89E3 Angela",children:[{path:"demo",loadChildren:()=>import("./chunk-ZWW7QHZN.js")},{path:"design",loadChildren:()=>import("./chunk-MW7IVIWS.js")},{path:"overview",loadChildren:()=>import("./chunk-BSGVPVDK.js")}]}],e=t;export{e as default};
