@@ -810,78 +810,6 @@
   },
   {
     "breadcrumbs": [
-      "了解 Angela",
-      "Demo"
-    ],
-    "pageType": "guide",
-    "title": "Demo",
-    "section": "Demo",
-    "route": "/introduction/demo",
-    "fragment": "demo",
-    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@workspace.com密码：angela-theme 「Sailing·风帆」是 Angela 的忠实用户，擅长应用 Angela 的各种高级特性。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "Demo"
-    ],
-    "pageType": "guide",
-    "title": "Demo",
-    "section": "Demo",
-    "route": "/introduction/demo",
-    "fragment": "demo",
-    "content": "为保证客户站点安全，「Sailing·风帆」暂不提供公开体验账号。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "Angela：重新思考 V2board",
-    "route": "/introduction/overview",
-    "fragment": "angela重新思考-v2board",
-    "content": "Angela 是一款以用户体验为核心，且高度可配置、可拓展的新一代 V2board Web 面板。 Angela 是对 V2board 的一次重新思考：我们不愿再做一款布局相似、功能相近的 V2board Web 面板。通过 Angela，我们希望为用户提供一种全新的、符合人体工学的用户体验。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "独一无二的品牌形象",
-    "route": "/introduction/overview",
-    "fragment": "独一无二的品牌形象",
-    "content": "通过 Angela，我们致力于避免千篇一律的品牌形象：使用同一款 V2board Web 面板的不同商家总是看起来相仿。通过 Angela 的独家配色算法和高度可配置的用户界面，您可以通过您的专属配色方案和界面配置，为用户留下独一无二的品牌印象。 我们希望 Angela 能够成为您的品牌形象的一部分，而不仅仅是一个 V2board Web 面板。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "人体工学的用户体验",
-    "route": "/introduction/overview",
-    "fragment": "人体工学的用户体验",
-    "content": "我们花费了大量精力将 Angela 打造成了一个包容性极强的 Web 面板：无论你使用的是手机、平板、笔记本还是台式机，无论你的屏幕朝向是横屏还是竖屏，无论你是一般用户还是残障人士，Angela 高细粒度的响应式布局和精心实现的无障碍功能能为您提供同水准的用户体验。 我们完全理解越来越多的用户对有质感的界面交互的追求，简单的、一闪而过的控件交互和页面切换愈发显得枯燥乏味。因此，我们为 Angela 实现了丰富且丝滑的界面动效，为您的用户带来焕然一新而令人难忘的的交互体验。 我们切身体会到等待加载的痛苦。得益于前沿的 Web 技术，我们通过本地缓存技术将 Angela 的加载速度提升了到极致。只要用户访问过一次 Angela，任何时候再次访问时将会立即呈现页面内容，无需等待。与此同时，Angela 还支持离线访问，即使在断网状态下，用户依然可以启动 Angela 并查看上次加载的数据。 此外，Angela 还实现了 渐进式应用（PWA） 技术，用户可以将 Angela “安装” 到桌面，像使用原生应用一样使用 Angela。安装 Angela 后，Angela 的视图会在独立的窗口中呈现，且用户可选择： 将 Angela 固定到任务栏将 Angela 固定到开始菜单为 Angela 创建桌面快捷方式在开机时自启动 Angela"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "概览"
-    ],
-    "pageType": "guide",
-    "title": "概览",
-    "section": "开放且可拓展的架构",
-    "route": "/introduction/overview",
-    "fragment": "开放且可拓展的架构",
-    "content": "与其他 V2board Web 面板不同，Angela 的架构是开放且可拓展的。我们对外开放的 Angela Access Points 和 extension.html 允许您对 Angela 进行二次开发，实现对 Angela 的进阶控制和监控，或是实现与第三方的深度集成： 集成 Crisp集成 Google Analytics 此外，您还可以通过 配置额外页面 进一步拓展 Angela 的功能："
-  },
-  {
-    "breadcrumbs": [
       "获取 Angela",
       "部署 Angela 资源包"
     ],
@@ -1458,6 +1386,78 @@
   },
   {
     "breadcrumbs": [
+      "了解 Angela",
+      "Demo"
+    ],
+    "pageType": "guide",
+    "title": "Demo",
+    "section": "Demo",
+    "route": "/introduction/demo",
+    "fragment": "demo",
+    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@workspace.com密码：angela-theme 「Sailing·风帆」是 Angela 的忠实用户，擅长应用 Angela 的各种高级特性。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "Demo"
+    ],
+    "pageType": "guide",
+    "title": "Demo",
+    "section": "Demo",
+    "route": "/introduction/demo",
+    "fragment": "demo",
+    "content": "为保证客户站点安全，「Sailing·风帆」暂不提供公开体验账号。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "Angela：重新思考 V2board",
+    "route": "/introduction/overview",
+    "fragment": "angela重新思考-v2board",
+    "content": "Angela 是一款以用户体验为核心，且高度可配置、可拓展的新一代 V2board Web 面板。 Angela 是对 V2board 的一次重新思考：我们不愿再做一款布局相似、功能相近的 V2board Web 面板。通过 Angela，我们希望为用户提供一种全新的、符合人体工学的用户体验。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "独一无二的品牌形象",
+    "route": "/introduction/overview",
+    "fragment": "独一无二的品牌形象",
+    "content": "通过 Angela，我们致力于避免千篇一律的品牌形象：使用同一款 V2board Web 面板的不同商家总是看起来相仿。通过 Angela 的独家配色算法和高度可配置的用户界面，您可以通过您的专属配色方案和界面配置，为用户留下独一无二的品牌印象。 我们希望 Angela 能够成为您的品牌形象的一部分，而不仅仅是一个 V2board Web 面板。  "
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "人体工学的用户体验",
+    "route": "/introduction/overview",
+    "fragment": "人体工学的用户体验",
+    "content": "我们花费了大量精力将 Angela 打造成了一个包容性极强的 Web 面板：无论你使用的是手机、平板、笔记本还是台式机，无论你的屏幕朝向是横屏还是竖屏，无论你是一般用户还是残障人士，Angela 高细粒度的响应式布局和精心实现的无障碍功能能为您提供同水准的用户体验。 我们完全理解越来越多的用户对有质感的界面交互的追求，简单的、一闪而过的控件交互和页面切换愈发显得枯燥乏味。因此，我们为 Angela 实现了丰富且丝滑的界面动效，为您的用户带来焕然一新而令人难忘的的交互体验。 我们切身体会到等待加载的痛苦。得益于前沿的 Web 技术，我们通过本地缓存技术将 Angela 的加载速度提升了到极致。只要用户访问过一次 Angela，任何时候再次访问时将会立即呈现页面内容，无需等待。与此同时，Angela 还支持离线访问，即使在断网状态下，用户依然可以启动 Angela 并查看上次加载的数据。 此外，Angela 还实现了 渐进式应用（PWA） 技术，用户可以将 Angela “安装” 到桌面，像使用原生应用一样使用 Angela。安装 Angela 后，Angela 的视图会在独立的窗口中呈现，且用户可选择： 将 Angela 固定到任务栏将 Angela 固定到开始菜单为 Angela 创建桌面快捷方式在开机时自启动 Angela"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "概览"
+    ],
+    "pageType": "guide",
+    "title": "概览",
+    "section": "开放且可拓展的架构",
+    "route": "/introduction/overview",
+    "fragment": "开放且可拓展的架构",
+    "content": "与其他 V2board Web 面板不同，Angela 的架构是开放且可拓展的。我们对外开放的 Angela Access Points 和 extension.html 允许您对 Angela 进行二次开发，实现对 Angela 的进阶控制和监控，或是实现与第三方的深度集成： 集成 Crisp集成 Google Analytics 此外，您还可以通过 配置额外页面 进一步拓展 Angela 的功能："
+  },
+  {
+    "breadcrumbs": [
       "使用 Angela",
       "为帮助文档增添交互性"
     ],
@@ -1887,246 +1887,6 @@
     "route": "/recipes/configure-home-image",
     "fragment": "配置首页图片",
     "content": "Angela 的首页展示了一张图片，用于塑造品牌印象： 该图片由 settings.yaml 中的 homeImage 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "Angela 支持链接到多个平台的原生 App： 原生 App 链接由 settings.yaml 中的 nativeApps 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "字段 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "platform App 的平台名称"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "link App 的下载链接"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "icon App 的 "
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "Material Symbols"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": " 图标或 "
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "平台图标"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "概念 可选值"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "平台图标"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "iWindows, iLinux, iAndroid, iApple"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "删除或注释 nativeApps 字段及其下属字段将完全禁用此功能。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "建议原生 App 链接不超过 5 个，以保证页面整洁并防止内容溢出。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "此外，Angela 还支持在原生 App 链接附近渲染一个帮助按钮，由 nativeAppsHelp 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "字段 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "text 帮助按钮的文本"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "link 要跳转的"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "站内"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "链接，如 "
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "/manuals/1"
   },
   {
     "breadcrumbs": [
@@ -2695,6 +2455,246 @@
   {
     "breadcrumbs": [
       "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "Angela 支持链接到多个平台的原生 App： 原生 App 链接由 settings.yaml 中的 nativeApps 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "platform App 的平台名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "link App 的下载链接"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "icon App 的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": " 图标或 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "平台图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "概念 可选值"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "平台图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "iWindows, iLinux, iAndroid, iApple"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "删除或注释 nativeApps 字段及其下属字段将完全禁用此功能。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "建议原生 App 链接不超过 5 个，以保证页面整洁并防止内容溢出。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "此外，Angela 还支持在原生 App 链接附近渲染一个帮助按钮，由 nativeAppsHelp 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "text 帮助按钮的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "link 要跳转的"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "站内"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "链接，如 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "/manuals/1"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
       "配置 Telegram 相关"
     ],
     "pageType": "guide",
@@ -2787,18 +2787,6 @@
     "route": "/recipes/configure-telegram",
     "fragment": "配置-telegram-相关",
     "content": "品牌名"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置工单等级显示文本"
-    ],
-    "pageType": "guide",
-    "title": "配置工单等级显示文本",
-    "section": "配置工单等级显示文本",
-    "route": "/recipes/configure-ticket-levels",
-    "fragment": "配置工单等级显示文本",
-    "content": "V2Board 支持三个工单等级：低优先级、中优先级 和 高优先级： Angela 支持您将这些工单等级用于其他用途。您可以在 settings.yaml 中的 ticketLevels 字段中配置这三个工单等级的显示文本： 您或许可以用工单等级来进行工单分类："
   },
   {
     "breadcrumbs": [
@@ -2967,6 +2955,18 @@
     "route": "/recipes/configure-ua-blacklist",
     "fragment": "配置浏览器黑名单",
     "content": "浏览器名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置工单等级显示文本"
+    ],
+    "pageType": "guide",
+    "title": "配置工单等级显示文本",
+    "section": "配置工单等级显示文本",
+    "route": "/recipes/configure-ticket-levels",
+    "fragment": "配置工单等级显示文本",
+    "content": "V2Board 支持三个工单等级：低优先级、中优先级 和 高优先级： Angela 支持您将这些工单等级用于其他用途。您可以在 settings.yaml 中的 ticketLevels 字段中配置这三个工单等级的显示文本： 您或许可以用工单等级来进行工单分类："
   },
   {
     "breadcrumbs": [
