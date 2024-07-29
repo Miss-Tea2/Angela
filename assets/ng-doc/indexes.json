@@ -79,6 +79,162 @@
   {
     "breadcrumbs": [
       "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "Angela Access Points",
+    "route": "/fundamentals/access-points",
+    "fragment": "angela-access-points",
+    "content": "Angela 对外部暴露了许多 Access Points，以便通过外部脚本拓展 Angela。 Access Point 是暴露在 window 对象上的函数。对于 Access Point getUser，可以通过 window.getUser() 来调用。 Access Points 可以是全局的或是局部的： 全局的 Access Points 在每个页面上都可用局部的 Access Points 仅在特定视图中可用，如帮助文档"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "watchCommands",
+    "route": "/fundamentals/access-points",
+    "fragment": "watchcommands",
+    "content": "返回一个 Observable，Angela 内部触发 Command 时会输出该 Command 对象。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "watchEvents",
+    "route": "/fundamentals/access-points",
+    "fragment": "watchevents",
+    "content": "返回一个 Observable，Angela 内部触发 Event 时会输出该 Event 对象。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "readCommandMetadata",
+    "route": "/fundamentals/access-points",
+    "fragment": "readcommandmetadata",
+    "content": "接受一个 Command 对象，返回该 Command 对象的元数据。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "readEventMetadata",
+    "route": "/fundamentals/access-points",
+    "fragment": "readeventmetadata",
+    "content": "接受一个 Event 对象，返回该 Event 对象的元数据。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryAuthToken",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryauthtoken",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的认证 token如果用户未登入，会立即输出 null 用户登入状态发生变化时，会输出新的值。 用户的认证 token 可用于调用 v2board 受保护的 API。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryUser",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryuser",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户信息如果用户未登入，会等待用户登入后输出用户信息 用户信息发生变化时，会输出新的值。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryUserPlan",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryuserplan",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的订阅计划信息如果用户未登入，会立即输出 null 用户或订阅计划信息发生变化时，会输出新的值。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "copy",
+    "route": "/fundamentals/access-points",
+    "fragment": "copy",
+    "content": "复制文本到剪贴板并提示。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "jump",
+    "route": "/fundamentals/access-points",
+    "fragment": "jump",
+    "content": "跳转到指定 id 的帮助文档"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "showSubscriptionDetail",
+    "route": "/fundamentals/access-points",
+    "fragment": "showsubscriptiondetail",
+    "content": "显示订阅详情对话框"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "installSubscription",
+    "route": "/fundamentals/access-points",
+    "fragment": "installsubscription",
+    "content": "导入订阅到指定代理客户端并提示。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "installSubscription",
+    "route": "/fundamentals/access-points",
+    "fragment": "installsubscription",
+    "content": "你可以 settings.yaml 中的 proxyClients 字段中找到代理客户端的 name。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
       "Angela Elements"
     ],
     "pageType": "guide",
@@ -315,162 +471,6 @@
     "route": "/fundamentals/angela-elements",
     "fragment": "图标",
     "content": "size 可选 | 图标的尺寸，单位 pixel，默认 24"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "Angela Access Points",
-    "route": "/fundamentals/access-points",
-    "fragment": "angela-access-points",
-    "content": "Angela 对外部暴露了许多 Access Points，以便通过外部脚本拓展 Angela。 Access Point 是暴露在 window 对象上的函数。对于 Access Point getUser，可以通过 window.getUser() 来调用。 Access Points 可以是全局的或是局部的： 全局的 Access Points 在每个页面上都可用局部的 Access Points 仅在特定视图中可用，如帮助文档"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "watchCommands",
-    "route": "/fundamentals/access-points",
-    "fragment": "watchcommands",
-    "content": "返回一个 Observable，Angela 内部触发 Command 时会输出该 Command 对象。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "watchEvents",
-    "route": "/fundamentals/access-points",
-    "fragment": "watchevents",
-    "content": "返回一个 Observable，Angela 内部触发 Event 时会输出该 Event 对象。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "readCommandMetadata",
-    "route": "/fundamentals/access-points",
-    "fragment": "readcommandmetadata",
-    "content": "接受一个 Command 对象，返回该 Command 对象的元数据。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "readEventMetadata",
-    "route": "/fundamentals/access-points",
-    "fragment": "readeventmetadata",
-    "content": "接受一个 Event 对象，返回该 Event 对象的元数据。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryAuthToken",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryauthtoken",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的认证 token如果用户未登入，会立即输出 null 用户登入状态发生变化时，会输出新的值。 用户的认证 token 可用于调用 v2board 受保护的 API。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryUser",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryuser",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户信息如果用户未登入，会等待用户登入后输出用户信息 用户信息发生变化时，会输出新的值。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryUserPlan",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryuserplan",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的订阅计划信息如果用户未登入，会立即输出 null 用户或订阅计划信息发生变化时，会输出新的值。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "copy",
-    "route": "/fundamentals/access-points",
-    "fragment": "copy",
-    "content": "复制文本到剪贴板并提示。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "jump",
-    "route": "/fundamentals/access-points",
-    "fragment": "jump",
-    "content": "跳转到指定 id 的帮助文档"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "showSubscriptionDetail",
-    "route": "/fundamentals/access-points",
-    "fragment": "showsubscriptiondetail",
-    "content": "显示订阅详情对话框"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "installSubscription",
-    "route": "/fundamentals/access-points",
-    "fragment": "installsubscription",
-    "content": "导入订阅到指定代理客户端并提示。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "installSubscription",
-    "route": "/fundamentals/access-points",
-    "fragment": "installsubscription",
-    "content": "你可以 settings.yaml 中的 proxyClients 字段中找到代理客户端的 name。"
   },
   {
     "breadcrumbs": [
@@ -878,7 +878,7 @@
     "section": "开放且可拓展的架构",
     "route": "/introduction/overview",
     "fragment": "开放且可拓展的架构",
-    "content": "与其他 V2board Web 面板不同，Angela 的架构是开放且可拓展的。我们对外开放的 Angela Access Points 和 extension.html 允许您对 Angela 进行二次开发，实现对 Angela 的进阶控制和监控，或是实现与第三方的深度集成。 集成 Crisp集成 Google Analytics"
+    "content": "与其他 V2board Web 面板不同，Angela 的架构是开放且可拓展的。我们对外开放的 Angela Access Points 和 extension.html 允许您对 Angela 进行二次开发，实现对 Angela 的进阶控制和监控，或是实现与第三方的深度集成： 集成 Crisp集成 Google Analytics 此外，您还可以通过 配置额外页面 进一步拓展 Angela 的功能："
   },
   {
     "breadcrumbs": [
@@ -1879,18 +1879,6 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "配置首页图片"
-    ],
-    "pageType": "guide",
-    "title": "配置首页图片",
-    "section": "配置首页图片",
-    "route": "/recipes/configure-home-image",
-    "fragment": "配置首页图片",
-    "content": "Angela 的首页展示了一张图片，用于塑造品牌印象： 该图片由 settings.yaml 中的 homeImage 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
       "配置原生 App 链接"
     ],
     "pageType": "guide",
@@ -2127,6 +2115,18 @@
     "route": "/recipes/configure-native-apps",
     "fragment": "配置原生-app-链接",
     "content": "/manuals/1"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置首页图片"
+    ],
+    "pageType": "guide",
+    "title": "配置首页图片",
+    "section": "配置首页图片",
+    "route": "/recipes/configure-home-image",
+    "fragment": "配置首页图片",
+    "content": "Angela 的首页展示了一张图片，用于塑造品牌印象： 该图片由 settings.yaml 中的 homeImage 字段控制："
   },
   {
     "breadcrumbs": [
@@ -2851,126 +2851,6 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "Angela 内置一个浏览器黑名单，用于引导用户转而使用更现代的浏览器，以获得更好的体验。 当用户使用的浏览器命中黑名单时，Angela 会在启动过程中弹出一个可关闭的弹窗，建议用户更换浏览器。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "Angela 不会阻止用户使用黑名单中的浏览器，只是提供一个友好的建议。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "Angela 的浏览器黑名单由 settings.yaml 中的 uaBlacklist 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "字段 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "name 浏览器名称"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "match 用于匹配 UA 的正则表达式，可以是多个"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "message 弹窗的内容"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "变量 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "{name}"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "浏览器名称"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
       "配置用户头像加载"
     ],
     "pageType": "guide",
@@ -3091,38 +2971,122 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "集成 Crisp"
+      "配置浏览器黑名单"
     ],
     "pageType": "guide",
-    "title": "集成 Crisp",
-    "section": "集成 Crisp",
-    "route": "/recipes/integrate-with-crisp",
-    "fragment": "集成-crisp",
-    "content": "在 extension.html 中添加 Crisp 相关的 "
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 内置一个浏览器黑名单，用于引导用户转而使用更现代的浏览器，以获得更好的体验。 当用户使用的浏览器命中黑名单时，Angela 会在启动过程中弹出一个可关闭的弹窗，建议用户更换浏览器。"
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "集成 Crisp"
+      "配置浏览器黑名单"
     ],
     "pageType": "guide",
-    "title": "集成 Crisp",
-    "section": "集成 Crisp",
-    "route": "/recipes/integrate-with-crisp",
-    "fragment": "集成-crisp",
-    "content": " 即可为 Angela 启用 Crisp。</p>"
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 不会阻止用户使用黑名单中的浏览器，只是提供一个友好的建议。"
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "集成 Crisp"
+      "配置浏览器黑名单"
     ],
     "pageType": "guide",
-    "title": "集成 Crisp",
-    "section": "集成 Crisp",
-    "route": "/recipes/integrate-with-crisp",
-    "fragment": "集成-crisp",
-    "content": "此外，通过 Angela Access Points ，Crisp 会话可以携带更多的上下文信息。 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Crisp 集成："
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 的浏览器黑名单由 settings.yaml 中的 uaBlacklist 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "name 浏览器名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "match 用于匹配 UA 的正则表达式，可以是多个"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "message 弹窗的内容"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "{name}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "浏览器名称"
   },
   {
     "breadcrumbs": [
@@ -3163,6 +3127,42 @@
   {
     "breadcrumbs": [
       "使用 Angela",
+      "集成 Crisp"
+    ],
+    "pageType": "guide",
+    "title": "集成 Crisp",
+    "section": "集成 Crisp",
+    "route": "/recipes/integrate-with-crisp",
+    "fragment": "集成-crisp",
+    "content": "在 extension.html 中添加 Crisp 相关的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "集成 Crisp"
+    ],
+    "pageType": "guide",
+    "title": "集成 Crisp",
+    "section": "集成 Crisp",
+    "route": "/recipes/integrate-with-crisp",
+    "fragment": "集成-crisp",
+    "content": " 即可为 Angela 启用 Crisp。</p>"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "集成 Crisp"
+    ],
+    "pageType": "guide",
+    "title": "集成 Crisp",
+    "section": "集成 Crisp",
+    "route": "/recipes/integrate-with-crisp",
+    "fragment": "集成-crisp",
+    "content": "此外，通过 Angela Access Points ，Crisp 会话可以携带更多的上下文信息。 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Crisp 集成："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
       "Material Symbols"
     ],
     "pageType": "guide",
@@ -3171,6 +3171,18 @@
     "route": "/recipes/material-symbols",
     "fragment": "material-symbols",
     "content": "Material Symbols 是由 Google 设计的，适配 Material 设计系统的一套图标系统。 您可以在 Google Fonts 浏览全部的 Material Symbols 图标。 如果您需要在 settings.yaml 中使用 Material Symbols，请用下划线 _ 连接小写后的图标名称，如： Add -> addArrow Forward -> arrow_forward"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "使用 Cloudflare Turnstile"
+    ],
+    "pageType": "guide",
+    "title": "使用 Cloudflare Turnstile",
+    "section": "使用 Cloudflare Turnstile",
+    "route": "/recipes/switch-to-cloudflare-turnstile",
+    "fragment": "使用-cloudflare-turnstile",
+    "content": "Angela 支持使用 Cloudflare Turnstile 作为人机验证服务： 要切换到 Cloudflare Turnstile，您首先需要对您的 V2board 实例进行一些更改： 随后，您只需要在 V2board 后台管理界面中，将 ReCaptcha 的 key 和 secret 都替换为 Cloudflare Turnstile 的 key 和 secret 即可。Angela 会自动适配人机验证服务商的更改。"
   },
   {
     "breadcrumbs": [
@@ -3411,17 +3423,5 @@
     "route": "/recipes/render-angela-elements",
     "fragment": "图标",
     "content": "size 可选 | 图标的尺寸，单位 pixel，默认 24"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "使用 Cloudflare Turnstile"
-    ],
-    "pageType": "guide",
-    "title": "使用 Cloudflare Turnstile",
-    "section": "使用 Cloudflare Turnstile",
-    "route": "/recipes/switch-to-cloudflare-turnstile",
-    "fragment": "使用-cloudflare-turnstile",
-    "content": "Angela 支持使用 Cloudflare Turnstile 作为人机验证服务： 要切换到 Cloudflare Turnstile，您首先需要对您的 V2board 实例进行一些更改： 随后，您只需要在 V2board 后台管理界面中，将 ReCaptcha 的 key 和 secret 都替换为 Cloudflare Turnstile 的 key 和 secret 即可。Angela 会自动适配人机验证服务商的更改。"
   }
 ]
