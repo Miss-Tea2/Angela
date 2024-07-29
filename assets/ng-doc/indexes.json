@@ -79,162 +79,6 @@
   {
     "breadcrumbs": [
       "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "Angela Access Points",
-    "route": "/fundamentals/access-points",
-    "fragment": "angela-access-points",
-    "content": "Angela 对外部暴露了许多 Access Points，以便通过外部脚本拓展 Angela。 Access Point 是暴露在 window 对象上的函数。对于 Access Point getUser，可以通过 window.getUser() 来调用。 Access Points 可以是全局的或是局部的： 全局的 Access Points 在每个页面上都可用局部的 Access Points 仅在特定视图中可用，如帮助文档"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "watchCommands",
-    "route": "/fundamentals/access-points",
-    "fragment": "watchcommands",
-    "content": "返回一个 Observable，Angela 内部触发 Command 时会输出该 Command 对象。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "watchEvents",
-    "route": "/fundamentals/access-points",
-    "fragment": "watchevents",
-    "content": "返回一个 Observable，Angela 内部触发 Event 时会输出该 Event 对象。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "readCommandMetadata",
-    "route": "/fundamentals/access-points",
-    "fragment": "readcommandmetadata",
-    "content": "接受一个 Command 对象，返回该 Command 对象的元数据。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "readEventMetadata",
-    "route": "/fundamentals/access-points",
-    "fragment": "readeventmetadata",
-    "content": "接受一个 Event 对象，返回该 Event 对象的元数据。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryAuthToken",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryauthtoken",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的认证 token如果用户未登入，会立即输出 null 用户登入状态发生变化时，会输出新的值。 用户的认证 token 可用于调用 v2board 受保护的 API。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryUser",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryuser",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户信息如果用户未登入，会等待用户登入后输出用户信息 用户信息发生变化时，会输出新的值。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryUserPlan",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryuserplan",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的订阅计划信息如果用户未登入，会立即输出 null 用户或订阅计划信息发生变化时，会输出新的值。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "copy",
-    "route": "/fundamentals/access-points",
-    "fragment": "copy",
-    "content": "复制文本到剪贴板并提示。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "jump",
-    "route": "/fundamentals/access-points",
-    "fragment": "jump",
-    "content": "跳转到指定 id 的帮助文档"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "showSubscriptionDetail",
-    "route": "/fundamentals/access-points",
-    "fragment": "showsubscriptiondetail",
-    "content": "显示订阅详情对话框"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "installSubscription",
-    "route": "/fundamentals/access-points",
-    "fragment": "installsubscription",
-    "content": "导入订阅到指定代理客户端并提示。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "installSubscription",
-    "route": "/fundamentals/access-points",
-    "fragment": "installsubscription",
-    "content": "你可以 settings.yaml 中的 proxyClients 字段中找到代理客户端的 name。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
       "Angela Elements"
     ],
     "pageType": "guide",
@@ -475,6 +319,162 @@
   {
     "breadcrumbs": [
       "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "Angela Access Points",
+    "route": "/fundamentals/access-points",
+    "fragment": "angela-access-points",
+    "content": "Angela 对外部暴露了许多 Access Points，以便通过外部脚本拓展 Angela。 Access Point 是暴露在 window 对象上的函数。对于 Access Point getUser，可以通过 window.getUser() 来调用。 Access Points 可以是全局的或是局部的： 全局的 Access Points 在每个页面上都可用局部的 Access Points 仅在特定视图中可用，如帮助文档"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "watchCommands",
+    "route": "/fundamentals/access-points",
+    "fragment": "watchcommands",
+    "content": "返回一个 Observable，Angela 内部触发 Command 时会输出该 Command 对象。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "watchEvents",
+    "route": "/fundamentals/access-points",
+    "fragment": "watchevents",
+    "content": "返回一个 Observable，Angela 内部触发 Event 时会输出该 Event 对象。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "readCommandMetadata",
+    "route": "/fundamentals/access-points",
+    "fragment": "readcommandmetadata",
+    "content": "接受一个 Command 对象，返回该 Command 对象的元数据。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "readEventMetadata",
+    "route": "/fundamentals/access-points",
+    "fragment": "readeventmetadata",
+    "content": "接受一个 Event 对象，返回该 Event 对象的元数据。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryAuthToken",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryauthtoken",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的认证 token如果用户未登入，会立即输出 null 用户登入状态发生变化时，会输出新的值。 用户的认证 token 可用于调用 v2board 受保护的 API。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryUser",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryuser",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户信息如果用户未登入，会等待用户登入后输出用户信息 用户信息发生变化时，会输出新的值。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryUserPlan",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryuserplan",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的订阅计划信息如果用户未登入，会立即输出 null 用户或订阅计划信息发生变化时，会输出新的值。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "copy",
+    "route": "/fundamentals/access-points",
+    "fragment": "copy",
+    "content": "复制文本到剪贴板并提示。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "jump",
+    "route": "/fundamentals/access-points",
+    "fragment": "jump",
+    "content": "跳转到指定 id 的帮助文档"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "showSubscriptionDetail",
+    "route": "/fundamentals/access-points",
+    "fragment": "showsubscriptiondetail",
+    "content": "显示订阅详情对话框"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "installSubscription",
+    "route": "/fundamentals/access-points",
+    "fragment": "installsubscription",
+    "content": "导入订阅到指定代理客户端并提示。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "installSubscription",
+    "route": "/fundamentals/access-points",
+    "fragment": "installsubscription",
+    "content": "你可以 settings.yaml 中的 proxyClients 字段中找到代理客户端的 name。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
       "extension.html"
     ],
     "pageType": "guide",
@@ -558,6 +558,258 @@
   },
   {
     "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "字段 文档"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "homeImage"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置首页图片"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "thresholds"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置提醒阈值"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "nativeApps"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置原生 App 链接"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "nativeAppsHelp"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置原生 App 链接"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "ticketLevels"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置工单等级显示文本"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "telegram"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置 Telegram 相关"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "externalPages"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置额外页面"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "proxyClients"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置代理客户端支持"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "userAvatarSources"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置用户头像加载"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "uaBlacklist"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "settings.yaml"
+    ],
+    "pageType": "guide",
+    "title": "settings.yaml",
+    "section": "settings.yaml",
+    "route": "/fundamentals/settings-yaml",
+    "fragment": "settingsyaml",
+    "content": "配置浏览器黑名单"
+  },
+  {
+    "breadcrumbs": [
       "了解 Angela",
       "Demo"
     ],
@@ -627,6 +879,126 @@
     "route": "/introduction/overview",
     "fragment": "开放且可拓展的架构",
     "content": "与其他 V2board Web 面板不同，Angela 的架构是开放且可拓展的。我们对外开放的 Angela Access Points 和 extension.html 允许您对 Angela 进行二次开发，实现对 Angela 的进阶控制和监控，或是实现与第三方的深度集成。 集成 Crisp集成 Google Analytics"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "要使用 Angela，您需要首先取得 Angela 使用许可 。 Angela 使用许可 的期限是 永久 。Angela 使用许可 的对象是 品牌 。 品牌 包含以下信息： 品牌名称配色方案品牌 Logo"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "只要您持有一个品牌的 Angela 使用许可，您便可以在任何域名下部署该品牌的 Angela。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "如果您拥有多个品牌，您需要为每一个品牌都获取一份 Angela 使用许可。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "凭借品牌的 Angela 使用许可，您可以在任何时候向我们索取该品牌的最新版本的 Angela 资源包 。Angela 资源包包含了您需要部署 Angela 的所有文件。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取 Angela 使用许可",
+    "route": "/obtain/purchase",
+    "fragment": "获取-angela-使用许可",
+    "content": "Angela 资源包是与品牌绑定的。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取方式",
+    "route": "/obtain/purchase",
+    "fragment": "获取方式",
+    "content": "如果您对 Angela 使用许可有兴趣，请联系我们的客户服务代表： @茶兔"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "获取方式",
+    "route": "/obtain/purchase",
+    "fragment": "获取方式",
+    "content": "我们只接受加密货币 USDT 作为支付方式。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "Angela 使用许可是如何验证的？",
+    "route": "/obtain/purchase",
+    "fragment": "angela-使用许可是如何验证的",
+    "content": "Angela 采用 用户侧本地验证 的许可验证方式： 许可验证在用户侧进行许可验证无需连接服务器"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "我可以更改品牌信息吗？",
+    "route": "/obtain/purchase",
+    "fragment": "我可以更改品牌信息吗",
+    "content": "如果您需要更改品牌信息，请向我们登记更改并获取新的 Angela 资源包 。 如果您放弃了原先的品牌并创建了独立的新品牌，请为新品牌购买新的 Angela 使用许可。"
+  },
+  {
+    "breadcrumbs": [
+      "获取 Angela",
+      "获取 Angela 使用许可"
+    ],
+    "pageType": "guide",
+    "title": "获取 Angela 使用许可",
+    "section": "Angela 发布新版本了，我可以更新吗？",
+    "route": "/obtain/purchase",
+    "fragment": "angela-发布新版本了我可以更新吗",
+    "content": "是的，您可以随时向我们索取最新版本的 Angela 资源包。"
   },
   {
     "breadcrumbs": [
@@ -1083,126 +1455,6 @@
     "route": "/obtain/deploy",
     "fragment": "为什么-angela-报错页面加载失败",
     "content": "Angela 无法从后端获取数据，请跟随教程检查反代配置。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "获取 Angela 使用许可",
-    "route": "/obtain/purchase",
-    "fragment": "获取-angela-使用许可",
-    "content": "要使用 Angela，您需要首先取得 Angela 使用许可 。 Angela 使用许可 的期限是 永久 。Angela 使用许可 的对象是 品牌 。 品牌 包含以下信息： 品牌名称配色方案品牌 Logo"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "获取 Angela 使用许可",
-    "route": "/obtain/purchase",
-    "fragment": "获取-angela-使用许可",
-    "content": "只要您持有一个品牌的 Angela 使用许可，您便可以在任何域名下部署该品牌的 Angela。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "获取 Angela 使用许可",
-    "route": "/obtain/purchase",
-    "fragment": "获取-angela-使用许可",
-    "content": "如果您拥有多个品牌，您需要为每一个品牌都获取一份 Angela 使用许可。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "获取 Angela 使用许可",
-    "route": "/obtain/purchase",
-    "fragment": "获取-angela-使用许可",
-    "content": "凭借品牌的 Angela 使用许可，您可以在任何时候向我们索取该品牌的最新版本的 Angela 资源包 。Angela 资源包包含了您需要部署 Angela 的所有文件。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "获取 Angela 使用许可",
-    "route": "/obtain/purchase",
-    "fragment": "获取-angela-使用许可",
-    "content": "Angela 资源包是与品牌绑定的。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "获取方式",
-    "route": "/obtain/purchase",
-    "fragment": "获取方式",
-    "content": "如果您对 Angela 使用许可有兴趣，请联系我们的客户服务代表： @茶兔"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "获取方式",
-    "route": "/obtain/purchase",
-    "fragment": "获取方式",
-    "content": "我们只接受加密货币 USDT 作为支付方式。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "Angela 使用许可是如何验证的？",
-    "route": "/obtain/purchase",
-    "fragment": "angela-使用许可是如何验证的",
-    "content": "Angela 采用 用户侧本地验证 的许可验证方式： 许可验证在用户侧进行许可验证无需连接服务器"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "我可以更改品牌信息吗？",
-    "route": "/obtain/purchase",
-    "fragment": "我可以更改品牌信息吗",
-    "content": "如果您需要更改品牌信息，请向我们登记更改并获取新的 Angela 资源包 。 如果您放弃了原先的品牌并创建了独立的新品牌，请为新品牌购买新的 Angela 使用许可。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "获取 Angela 使用许可"
-    ],
-    "pageType": "guide",
-    "title": "获取 Angela 使用许可",
-    "section": "Angela 发布新版本了，我可以更新吗？",
-    "route": "/obtain/purchase",
-    "fragment": "angela-发布新版本了我可以更新吗",
-    "content": "是的，您可以随时向我们索取最新版本的 Angela 资源包。"
   },
   {
     "breadcrumbs": [
