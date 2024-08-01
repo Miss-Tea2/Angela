@@ -1,17 +1,6 @@
 [
   {
     "breadcrumbs": [
-      "社区群组"
-    ],
-    "pageType": "guide",
-    "title": "社区群组",
-    "section": "社区群组",
-    "route": "/community",
-    "fragment": "社区群组",
-    "content": "茶兔小卖部（频道）：https://t.me/miss_tea2s_shop茶兔俱乐部（群组）：https://t.me/miss_tea2s_club"
-  },
-  {
-    "breadcrumbs": [
       "更新日志"
     ],
     "pageType": "guide",
@@ -20,6 +9,17 @@
     "route": "/changelog",
     "fragment": "更新日志",
     "content": "请关注我们的社区群组！我们会在那里发布有关 Angela 的一切动态。"
+  },
+  {
+    "breadcrumbs": [
+      "社区群组"
+    ],
+    "pageType": "guide",
+    "title": "社区群组",
+    "section": "社区群组",
+    "route": "/community",
+    "fragment": "社区群组",
+    "content": "茶兔小卖部（频道）：https://t.me/miss_tea2s_shop茶兔俱乐部（群组）：https://t.me/miss_tea2s_club"
   },
   {
     "breadcrumbs": [
@@ -842,19 +842,7 @@
     "section": "Demo",
     "route": "/introduction/demo",
     "fragment": "demo",
-    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@workspace.com密码：angela-theme 「Sailing·风帆」是 Angela 的忠实用户，擅长应用 Angela 的各种高级特性。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "Demo"
-    ],
-    "pageType": "guide",
-    "title": "Demo",
-    "section": "Demo",
-    "route": "/introduction/demo",
-    "fragment": "demo",
-    "content": "为保证客户站点安全，「Sailing·风帆」暂不提供公开体验账号。"
+    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@angela.theme密码：angela-theme"
   },
   {
     "breadcrumbs": [
@@ -1795,18 +1783,6 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "配置首页图片"
-    ],
-    "pageType": "guide",
-    "title": "配置首页图片",
-    "section": "配置首页图片",
-    "route": "/recipes/configure-home-image",
-    "fragment": "配置首页图片",
-    "content": "Angela 的首页展示了一张图片，用于塑造品牌印象： 该图片由 settings.yaml 中的 homeImage 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
       "配置额外页面"
     ],
     "pageType": "guide",
@@ -2007,6 +1983,18 @@
     "route": "/recipes/configure-external-pages",
     "fragment": "配置额外页面",
     "content": "额外页面是可选的。将 externalPages 字段及其下属字段全部删除或注释，即可禁用额外页面。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置首页图片"
+    ],
+    "pageType": "guide",
+    "title": "配置首页图片",
+    "section": "配置首页图片",
+    "route": "/recipes/configure-home-image",
+    "fragment": "配置首页图片",
+    "content": "Angela 的首页展示了一张图片，用于塑造品牌印象： 该图片由 settings.yaml 中的 homeImage 字段控制："
   },
   {
     "breadcrumbs": [
@@ -2247,102 +2235,6 @@
     "route": "/recipes/configure-native-apps",
     "fragment": "配置原生-app-链接",
     "content": "/manuals/1"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "Telegram 相关卡片的文本内容是由 settings.yaml 中的 telegram 字段控制的："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "|- 是 YAML 的语法，用于输入多行文本。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "字段 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "text 一般情况下的文本"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "textBrief 窄屏布局下的文本"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "变量 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "{brand}"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "品牌名"
   },
   {
     "breadcrumbs": [
@@ -2911,6 +2803,114 @@
   {
     "breadcrumbs": [
       "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "Telegram 相关卡片的文本内容是由 settings.yaml 中的 telegram 字段控制的："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "|- 是 YAML 的语法，用于输入多行文本。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "text 一般情况下的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "textBrief 窄屏布局下的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "{brand}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "品牌名"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置工单等级显示文本"
+    ],
+    "pageType": "guide",
+    "title": "配置工单等级显示文本",
+    "section": "配置工单等级显示文本",
+    "route": "/recipes/configure-ticket-levels",
+    "fragment": "配置工单等级显示文本",
+    "content": "V2Board 支持三个工单等级：低优先级、中优先级 和 高优先级： Angela 支持您将这些工单等级用于其他用途。您可以在 settings.yaml 中的 ticketLevels 字段中配置这三个工单等级的显示文本： 您或许可以用工单等级来进行工单分类："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
       "配置提醒阈值"
     ],
     "pageType": "guide",
@@ -2955,18 +2955,6 @@
     "route": "/recipes/configure-thresholds",
     "fragment": "配置提醒阈值",
     "content": "suggestRenewSubscription 提醒续费订阅的阈值，单位是天数"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置工单等级显示文本"
-    ],
-    "pageType": "guide",
-    "title": "配置工单等级显示文本",
-    "section": "配置工单等级显示文本",
-    "route": "/recipes/configure-ticket-levels",
-    "fragment": "配置工单等级显示文本",
-    "content": "V2Board 支持三个工单等级：低优先级、中优先级 和 高优先级： Angela 支持您将这些工单等级用于其他用途。您可以在 settings.yaml 中的 ticketLevels 字段中配置这三个工单等级的显示文本： 您或许可以用工单等级来进行工单分类："
   },
   {
     "breadcrumbs": [
