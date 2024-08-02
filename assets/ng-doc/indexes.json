@@ -235,66 +235,6 @@
   {
     "breadcrumbs": [
       "Angela 基础",
-      "extension.html"
-    ],
-    "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/fundamentals/extension-html",
-    "fragment": "extensionhtml",
-    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 extension.html 文件，如： zh/extension.htmlen/extension.html Angela 会在主体启动完成后尝试加载 extension.html，并将其中的所有内容都附加到 Angela 所在的页面内。 extension.html 中的： 内联脚本 "
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "extension.html"
-    ],
-    "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/fundamentals/extension-html",
-    "fragment": "extensionhtml",
-    "content": "..."
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "extension.html"
-    ],
-    "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/fundamentals/extension-html",
-    "fragment": "extensionhtml",
-    "content": " 将被执行远程脚本   将被加载并执行内联样式 "
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "extension.html"
-    ],
-    "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/fundamentals/extension-html",
-    "fragment": "extensionhtml",
-    "content": "..."
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "extension.html"
-    ],
-    "pageType": "guide",
-    "title": "extension.html",
-    "section": "extension.html",
-    "route": "/fundamentals/extension-html",
-    "fragment": "extensionhtml",
-    "content": " 将被应用到页面远程样式   将被加载并应用到页面其他 HTML 元素都将被附加到  末尾 通过 extension.html，您可以通过附加额外的样式来客制化 Angela 的外观，亦或是为 Angela 集成多种第三方服务。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
       "Angela Elements"
     ],
     "pageType": "guide",
@@ -535,6 +475,78 @@
   {
     "breadcrumbs": [
       "Angela 基础",
+      "Markdown"
+    ],
+    "pageType": "guide",
+    "title": "Markdown",
+    "section": "Markdown",
+    "route": "/fundamentals/markdown",
+    "fragment": "markdown",
+    "content": "Markdown 是一种轻量便捷的标记语言，用于快速撰写文档。 Markdown 是 HTML 的超集：所有的 HTML 语法都可以在 Markdown 中使用，同时 Markdown 还提供了一些额外的语法糖，使得文档编写更加简洁。 您可以在这里浏览所有的 Markdown 语法：https://markdown.com.cn/"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": "在 Angela 资源包中的每一个语言变体下，都存在一个 extension.html 文件，如： zh/extension.htmlen/extension.html Angela 会在主体启动完成后尝试加载 extension.html，并将其中的所有内容都附加到 Angela 所在的页面内。 extension.html 中的： 内联脚本 "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": "..."
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": " 将被执行远程脚本   将被加载并执行内联样式 "
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": "..."
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "extension.html"
+    ],
+    "pageType": "guide",
+    "title": "extension.html",
+    "section": "extension.html",
+    "route": "/fundamentals/extension-html",
+    "fragment": "extensionhtml",
+    "content": " 将被应用到页面远程样式   将被加载并应用到页面其他 HTML 元素都将被附加到  末尾 通过 extension.html，您可以通过附加额外的样式来客制化 Angela 的外观，亦或是为 Angela 集成多种第三方服务。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
       "Material Symbols"
     ],
     "pageType": "guide",
@@ -558,15 +570,15 @@
   },
   {
     "breadcrumbs": [
-      "Angela 基础",
-      "Markdown"
+      "了解 Angela",
+      "Demo"
     ],
     "pageType": "guide",
-    "title": "Markdown",
-    "section": "Markdown",
-    "route": "/fundamentals/markdown",
-    "fragment": "markdown",
-    "content": "Markdown 是一种轻量便捷的标记语言，用于快速撰写文档。 Markdown 是 HTML 的超集：所有的 HTML 语法都可以在 Markdown 中使用，同时 Markdown 还提供了一些额外的语法糖，使得文档编写更加简洁。 您可以在这里浏览所有的 Markdown 语法：https://markdown.com.cn/"
+    "title": "Demo",
+    "section": "Demo",
+    "route": "/introduction/demo",
+    "fragment": "demo",
+    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@angela.theme密码：angela-theme"
   },
   {
     "breadcrumbs": [
@@ -831,18 +843,6 @@
     "route": "/fundamentals/settings-yaml",
     "fragment": "settingsyaml",
     "content": "配置浏览器黑名单"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "Demo"
-    ],
-    "pageType": "guide",
-    "title": "Demo",
-    "section": "Demo",
-    "route": "/introduction/demo",
-    "fragment": "demo",
-    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@angela.theme密码：angela-theme"
   },
   {
     "breadcrumbs": [
@@ -1471,6 +1471,54 @@
   {
     "breadcrumbs": [
       "使用 Angela",
+      "撰写公告"
+    ],
+    "pageType": "guide",
+    "title": "撰写公告",
+    "section": "撰写公告",
+    "route": "/recipes/compose-announcements",
+    "fragment": "撰写公告",
+    "content": "Angela 支持您以 Markdown 格式撰写公告： 以上的 Markdown 代码会被渲染为如下的公告："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写公告"
+    ],
+    "pageType": "guide",
+    "title": "撰写公告",
+    "section": "撰写公告",
+    "route": "/recipes/compose-announcements",
+    "fragment": "撰写公告",
+    "content": "Angela 不支持在普通公告中显示图片。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写公告"
+    ],
+    "pageType": "guide",
+    "title": "撰写公告",
+    "section": "弹窗公告",
+    "route": "/recipes/compose-announcements",
+    "fragment": "弹窗公告",
+    "content": "为公告加上 --mandatory-view 或者 弹窗 标签后，Angela 会在用户登入后以弹窗的形式展示该条公告： 只要用户处于登入状态，在任何页面都会弹窗如果有多条公告，Angela 会依次弹窗已经阅读过的公告不会再次弹窗只有点击按钮才可以关闭弹窗公告并标记为已读"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写公告"
+    ],
+    "pageType": "guide",
+    "title": "撰写公告",
+    "section": "弹窗公告",
+    "route": "/recipes/compose-announcements",
+    "fragment": "弹窗公告",
+    "content": "弹窗公告未来会支持图片。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
       "附加脚本与样式"
     ],
     "pageType": "guide",
@@ -1551,54 +1599,6 @@
     "route": "/recipes/add-scripts-and-styles",
     "fragment": "附加脚本与样式",
     "content": "请不要对 index.html 做任何修改，这会破坏 Angela 的缓存机制，并可能导致 Angela 启动失败。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写公告"
-    ],
-    "pageType": "guide",
-    "title": "撰写公告",
-    "section": "撰写公告",
-    "route": "/recipes/compose-announcements",
-    "fragment": "撰写公告",
-    "content": "Angela 支持您以 Markdown 格式撰写公告： 以上的 Markdown 代码会被渲染为如下的公告："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写公告"
-    ],
-    "pageType": "guide",
-    "title": "撰写公告",
-    "section": "撰写公告",
-    "route": "/recipes/compose-announcements",
-    "fragment": "撰写公告",
-    "content": "Angela 不支持在普通公告中显示图片。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写公告"
-    ],
-    "pageType": "guide",
-    "title": "撰写公告",
-    "section": "弹窗公告",
-    "route": "/recipes/compose-announcements",
-    "fragment": "弹窗公告",
-    "content": "为公告加上 --mandatory-view 或者 弹窗 标签后，Angela 会在用户登入后以弹窗的形式展示该条公告： 只要用户处于登入状态，在任何页面都会弹窗如果有多条公告，Angela 会依次弹窗已经阅读过的公告不会再次弹窗只有点击按钮才可以关闭弹窗公告并标记为已读"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写公告"
-    ],
-    "pageType": "guide",
-    "title": "撰写公告",
-    "section": "弹窗公告",
-    "route": "/recipes/compose-announcements",
-    "fragment": "弹窗公告",
-    "content": "弹窗公告未来会支持图片。"
   },
   {
     "breadcrumbs": [
@@ -1743,6 +1743,42 @@
     "route": "/recipes/compose-manuals",
     "fragment": "变量",
     "content": "Base64 编码后的订阅链接"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写套餐描述"
+    ],
+    "pageType": "guide",
+    "title": "撰写套餐描述",
+    "section": "撰写套餐描述",
+    "route": "/recipes/compose-plan-description",
+    "fragment": "撰写套餐描述",
+    "content": "Angela 支持两种套餐描述格式： MarkdownJSON"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写套餐描述"
+    ],
+    "pageType": "guide",
+    "title": "撰写套餐描述",
+    "section": "Markdown",
+    "route": "/recipes/compose-plan-description",
+    "fragment": "markdown",
+    "content": "您可以在套餐描述中使用 Markdown 格式，Angela 会为您正确渲染其内容。 由于 Markdown 是 HTML 的超集，Angela Elements 同样在套餐描述中可用。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写套餐描述"
+    ],
+    "pageType": "guide",
+    "title": "撰写套餐描述",
+    "section": "JSON",
+    "route": "/recipes/compose-plan-description",
+    "fragment": "json",
+    "content": "Angela 同样支持与主流 V2board 原生 App 相同的 JSON 格式来描述套餐："
   },
   {
     "breadcrumbs": [
@@ -2527,186 +2563,6 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "撰写套餐描述"
-    ],
-    "pageType": "guide",
-    "title": "撰写套餐描述",
-    "section": "撰写套餐描述",
-    "route": "/recipes/compose-plan-description",
-    "fragment": "撰写套餐描述",
-    "content": "Angela 支持两种套餐描述格式： MarkdownJSON"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写套餐描述"
-    ],
-    "pageType": "guide",
-    "title": "撰写套餐描述",
-    "section": "Markdown",
-    "route": "/recipes/compose-plan-description",
-    "fragment": "markdown",
-    "content": "您可以在套餐描述中使用 Markdown 格式，Angela 会为您正确渲染其内容。 由于 Markdown 是 HTML 的超集，Angela Elements 同样在套餐描述中可用。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写套餐描述"
-    ],
-    "pageType": "guide",
-    "title": "撰写套餐描述",
-    "section": "JSON",
-    "route": "/recipes/compose-plan-description",
-    "fragment": "json",
-    "content": "Angela 同样支持与主流 V2board 原生 App 相同的 JSON 格式来描述套餐："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "Telegram 相关卡片的文本内容是由 settings.yaml 中的 telegram 字段控制的："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "|- 是 YAML 的语法，用于输入多行文本。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "字段 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "text 一般情况下的文本"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "textBrief 窄屏布局下的文本"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "变量 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "{brand}"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置 Telegram 相关"
-    ],
-    "pageType": "guide",
-    "title": "配置 Telegram 相关",
-    "section": "配置 Telegram 相关",
-    "route": "/recipes/configure-telegram",
-    "fragment": "配置-telegram-相关",
-    "content": "品牌名"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置提醒阈值"
-    ],
-    "pageType": "guide",
-    "title": "配置提醒阈值",
-    "section": "配置提醒阈值",
-    "route": "/recipes/configure-thresholds",
-    "fragment": "配置提醒阈值",
-    "content": "Angela 依赖多个预先配置的 阈值 来判断用户是否接近某个状态，如： 当用户使用的流量超过百分之多少时，Angela 会认为该用户已经接近流量耗尽的状态。当用户的订阅剩余天数少于某个值时，Angela 会认为该用户的订阅即将到期。 这些阈值可以在 settings.yaml 中的 thresholds 字段中配置："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置提醒阈值"
-    ],
-    "pageType": "guide",
-    "title": "配置提醒阈值",
-    "section": "配置提醒阈值",
-    "route": "/recipes/configure-thresholds",
-    "fragment": "配置提醒阈值",
-    "content": "配置项 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置提醒阈值"
-    ],
-    "pageType": "guide",
-    "title": "配置提醒阈值",
-    "section": "配置提醒阈值",
-    "route": "/recipes/configure-thresholds",
-    "fragment": "配置提醒阈值",
-    "content": "suggestSupplementTraffic 提醒补充流量的阈值，单位是百分比，取值范围为 0 到 1"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置提醒阈值"
-    ],
-    "pageType": "guide",
-    "title": "配置提醒阈值",
-    "section": "配置提醒阈值",
-    "route": "/recipes/configure-thresholds",
-    "fragment": "配置提醒阈值",
-    "content": "suggestRenewSubscription 提醒续费订阅的阈值，单位是天数"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
       "配置原生 App 链接"
     ],
     "pageType": "guide",
@@ -2943,6 +2799,150 @@
     "route": "/recipes/configure-native-apps",
     "fragment": "配置原生-app-链接",
     "content": "/manuals/1"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "Telegram 相关卡片的文本内容是由 settings.yaml 中的 telegram 字段控制的："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "|- 是 YAML 的语法，用于输入多行文本。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "text 一般情况下的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "textBrief 窄屏布局下的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "{brand}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置 Telegram 相关"
+    ],
+    "pageType": "guide",
+    "title": "配置 Telegram 相关",
+    "section": "配置 Telegram 相关",
+    "route": "/recipes/configure-telegram",
+    "fragment": "配置-telegram-相关",
+    "content": "品牌名"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置提醒阈值"
+    ],
+    "pageType": "guide",
+    "title": "配置提醒阈值",
+    "section": "配置提醒阈值",
+    "route": "/recipes/configure-thresholds",
+    "fragment": "配置提醒阈值",
+    "content": "Angela 依赖多个预先配置的 阈值 来判断用户是否接近某个状态，如： 当用户使用的流量超过百分之多少时，Angela 会认为该用户已经接近流量耗尽的状态。当用户的订阅剩余天数少于某个值时，Angela 会认为该用户的订阅即将到期。 这些阈值可以在 settings.yaml 中的 thresholds 字段中配置："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置提醒阈值"
+    ],
+    "pageType": "guide",
+    "title": "配置提醒阈值",
+    "section": "配置提醒阈值",
+    "route": "/recipes/configure-thresholds",
+    "fragment": "配置提醒阈值",
+    "content": "配置项 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置提醒阈值"
+    ],
+    "pageType": "guide",
+    "title": "配置提醒阈值",
+    "section": "配置提醒阈值",
+    "route": "/recipes/configure-thresholds",
+    "fragment": "配置提醒阈值",
+    "content": "suggestSupplementTraffic 提醒补充流量的阈值，单位是百分比，取值范围为 0 到 1"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置提醒阈值"
+    ],
+    "pageType": "guide",
+    "title": "配置提醒阈值",
+    "section": "配置提醒阈值",
+    "route": "/recipes/configure-thresholds",
+    "fragment": "配置提醒阈值",
+    "content": "suggestRenewSubscription 提醒续费订阅的阈值，单位是天数"
   },
   {
     "breadcrumbs": [
@@ -3199,6 +3199,42 @@
   {
     "breadcrumbs": [
       "使用 Angela",
+      "集成 Google Analytics"
+    ],
+    "pageType": "guide",
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": "在 extension.html 中添加 Google Analytics 相关的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "集成 Google Analytics"
+    ],
+    "pageType": "guide",
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": " 即可为 Angela 启用 Google Analytics。</p>"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "集成 Google Analytics"
+    ],
+    "pageType": "guide",
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": "此外，通过 Angela Access Points ，Google Analytics 可以收集细粒度更高的用户行为数据 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Google Analytics 集成："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
       "集成 Crisp"
     ],
     "pageType": "guide",
@@ -3231,18 +3267,6 @@
     "route": "/recipes/integrate-with-crisp",
     "fragment": "集成-crisp",
     "content": "此外，通过 Angela Access Points ，Crisp 会话可以携带更多的上下文信息。 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Crisp 集成："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "使用 Cloudflare Turnstile"
-    ],
-    "pageType": "guide",
-    "title": "使用 Cloudflare Turnstile",
-    "section": "使用 Cloudflare Turnstile",
-    "route": "/recipes/switch-to-cloudflare-turnstile",
-    "fragment": "使用-cloudflare-turnstile",
-    "content": "Angela 支持使用 Cloudflare Turnstile 作为人机验证服务： 要切换到 Cloudflare Turnstile，您首先需要对您的 V2board 实例进行一些更改： 随后，您只需要在 V2board 后台管理界面中，将 ReCaptcha 的 key 和 secret 都替换为 Cloudflare Turnstile 的 key 和 secret 即可。Angela 会自动适配人机验证服务商的更改。"
   },
   {
     "breadcrumbs": [
@@ -3487,37 +3511,13 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "集成 Google Analytics"
+      "使用 Cloudflare Turnstile"
     ],
     "pageType": "guide",
-    "title": "集成 Google Analytics",
-    "section": "集成 Google Analytics",
-    "route": "/recipes/integrate-with-google-analytics",
-    "fragment": "集成-google-analytics",
-    "content": "在 extension.html 中添加 Google Analytics 相关的 "
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "集成 Google Analytics"
-    ],
-    "pageType": "guide",
-    "title": "集成 Google Analytics",
-    "section": "集成 Google Analytics",
-    "route": "/recipes/integrate-with-google-analytics",
-    "fragment": "集成-google-analytics",
-    "content": " 即可为 Angela 启用 Google Analytics。</p>"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "集成 Google Analytics"
-    ],
-    "pageType": "guide",
-    "title": "集成 Google Analytics",
-    "section": "集成 Google Analytics",
-    "route": "/recipes/integrate-with-google-analytics",
-    "fragment": "集成-google-analytics",
-    "content": "此外，通过 Angela Access Points ，Google Analytics 可以收集细粒度更高的用户行为数据 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Google Analytics 集成："
+    "title": "使用 Cloudflare Turnstile",
+    "section": "使用 Cloudflare Turnstile",
+    "route": "/recipes/switch-to-cloudflare-turnstile",
+    "fragment": "使用-cloudflare-turnstile",
+    "content": "Angela 支持使用 Cloudflare Turnstile 作为人机验证服务： 要切换到 Cloudflare Turnstile，您首先需要对您的 V2board 实例进行一些更改： 随后，您只需要在 V2board 后台管理界面中，将 ReCaptcha 的 key 和 secret 都替换为 Cloudflare Turnstile 的 key 和 secret 即可。Angela 会自动适配人机验证服务商的更改。"
   }
 ]
