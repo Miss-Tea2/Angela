@@ -95,6 +95,66 @@
     ],
     "pageType": "guide",
     "title": "Angela Access Points",
+    "section": "navigate",
+    "route": "/fundamentals/access-points",
+    "fragment": "navigate",
+    "content": "导航到指定的应用内路径"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "watchNavigation",
+    "route": "/fundamentals/access-points",
+    "fragment": "watchnavigation",
+    "content": "返回一个 Observable，在每次应用内导航完成后输出导航后的路径："
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryAuthToken",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryauthtoken",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的认证 token如果用户未登入，会立即输出 null 用户登入状态发生变化时，会输出新的值。 用户的认证 token 可用于调用 v2board 受保护的 API。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryUser",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryuser",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户信息如果用户未登入，会等待用户登入后输出用户信息 用户信息发生变化时，会输出新的值。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
+    "section": "queryUserPlan",
+    "route": "/fundamentals/access-points",
+    "fragment": "queryuserplan",
+    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的订阅计划信息如果用户未登入，会立即输出 null 用户或订阅计划信息发生变化时，会输出新的值。"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
+      "Angela Access Points"
+    ],
+    "pageType": "guide",
+    "title": "Angela Access Points",
     "section": "watchCommands",
     "route": "/fundamentals/access-points",
     "fragment": "watchcommands",
@@ -135,42 +195,6 @@
     "route": "/fundamentals/access-points",
     "fragment": "readeventmetadata",
     "content": "接受一个 Event 对象，返回该 Event 对象的元数据。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryAuthToken",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryauthtoken",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的认证 token如果用户未登入，会立即输出 null 用户登入状态发生变化时，会输出新的值。 用户的认证 token 可用于调用 v2board 受保护的 API。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryUser",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryuser",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户信息如果用户未登入，会等待用户登入后输出用户信息 用户信息发生变化时，会输出新的值。"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
-      "Angela Access Points"
-    ],
-    "pageType": "guide",
-    "title": "Angela Access Points",
-    "section": "queryUserPlan",
-    "route": "/fundamentals/access-points",
-    "fragment": "queryuserplan",
-    "content": "返回一个 Observable，当订阅时： 如果用户已登入，会立即输出用户的订阅计划信息如果用户未登入，会立即输出 null 用户或订阅计划信息发生变化时，会输出新的值。"
   },
   {
     "breadcrumbs": [
@@ -475,18 +499,6 @@
   {
     "breadcrumbs": [
       "Angela 基础",
-      "Markdown"
-    ],
-    "pageType": "guide",
-    "title": "Markdown",
-    "section": "Markdown",
-    "route": "/fundamentals/markdown",
-    "fragment": "markdown",
-    "content": "Markdown 是一种轻量便捷的标记语言，用于快速撰写文档。 Markdown 是 HTML 的超集：所有的 HTML 语法都可以在 Markdown 中使用，同时 Markdown 还提供了一些额外的语法糖，使得文档编写更加简洁。 您可以在这里浏览所有的 Markdown 语法：https://markdown.com.cn/"
-  },
-  {
-    "breadcrumbs": [
-      "Angela 基础",
       "extension.html"
     ],
     "pageType": "guide",
@@ -547,6 +559,18 @@
   {
     "breadcrumbs": [
       "Angela 基础",
+      "Markdown"
+    ],
+    "pageType": "guide",
+    "title": "Markdown",
+    "section": "Markdown",
+    "route": "/fundamentals/markdown",
+    "fragment": "markdown",
+    "content": "Markdown 是一种轻量便捷的标记语言，用于快速撰写文档。 Markdown 是 HTML 的超集：所有的 HTML 语法都可以在 Markdown 中使用，同时 Markdown 还提供了一些额外的语法糖，使得文档编写更加简洁。 您可以在这里浏览所有的 Markdown 语法：https://markdown.com.cn/"
+  },
+  {
+    "breadcrumbs": [
+      "Angela 基础",
       "Material Symbols"
     ],
     "pageType": "guide",
@@ -567,18 +591,6 @@
     "route": "/fundamentals/observable",
     "fragment": "observable",
     "content": "Observable 是 Reactive X 响应式编程的核心概念。它是一个可观察的对象，可以在未来的某个时间点发出一个或多个值。 在 JavaScript 中，Observable 由 RxJS 库实现。您可以在 RxJS 的官方文档中了解更多关于 Observable 的信息：https://rxjs.dev/guide/observable 许多 Angela Access Points 会返回 Observable。对于一个 Observable，您可以通过其 subscribe 方法来订阅它，以便在它发出值时执行一些操作。"
-  },
-  {
-    "breadcrumbs": [
-      "了解 Angela",
-      "Demo"
-    ],
-    "pageType": "guide",
-    "title": "Demo",
-    "section": "Demo",
-    "route": "/introduction/demo",
-    "fragment": "demo",
-    "content": "「蛋挞云」是 Angela 一直以来的合作伙伴。您可以通过以下账号信息在「蛋挞云」体验 Angela： 地址：https://eggtartcloud.biz/账号：trial@angela.theme密码：angela-theme"
   },
   {
     "breadcrumbs": [
@@ -847,6 +859,30 @@
   {
     "breadcrumbs": [
       "了解 Angela",
+      "Demo"
+    ],
+    "pageType": "guide",
+    "title": "Demo",
+    "section": "Demo",
+    "route": "/introduction/demo",
+    "fragment": "demo",
+    "content": "「AngelaDemo」是一个由 Angela 和 Xboard 驱动的演示站点，您可以通过以下账号信息在「AngelaDemo」体验 Angela： 地址：https://angela-demo.misstea2.live/账号：demo@misstea2.live密码：demo@misstea2.live"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
+      "Demo"
+    ],
+    "pageType": "guide",
+    "title": "Demo",
+    "section": "Demo",
+    "route": "/introduction/demo",
+    "fragment": "demo",
+    "content": "在「AngelaDemo」使用优惠卷码 angela-coupon 可以减免 100% 的订单费用。"
+  },
+  {
+    "breadcrumbs": [
+      "了解 Angela",
       "概览"
     ],
     "pageType": "guide",
@@ -902,7 +938,7 @@
     "section": "部署 Angela 资源包",
     "route": "/obtain/deploy",
     "fragment": "部署-angela-资源包",
-    "content": "这篇教程将会帮助您将现有的 V2board 架构迁移至 Angela 所需的前后端分离架构，并部署您的 Angela 资源包。"
+    "content": "严格来说，Angela 并非一个 V2board 主题，而是一个独立的 Web 应用，仅通过 API 与 V2board 通信。因此，Angela 并不能像 V2board 主题那样通过简单拖动到 themes 目录来安装。 Angela 的部署流程分为两个部分："
   },
   {
     "breadcrumbs": [
@@ -914,7 +950,7 @@
     "section": "部署 Angela 资源包",
     "route": "/obtain/deploy",
     "fragment": "部署-angela-资源包",
-    "content": "在阅读这篇教程前，清确保"
+    "content": "Angela Web 应用的部署 Angela Web 应用与 V2board API 的对接"
   },
   {
     "breadcrumbs": [
@@ -923,10 +959,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "部署 Angela 资源包",
+    "section": "部署 Angela Web 应用",
     "route": "/obtain/deploy",
-    "fragment": "部署-angela-资源包",
-    "content": "您已经获取了一份 Angela 资源包 您已经搭建了一个 V2board 站点 当前的 V2board 站点可以通过 HTTPS 协议访问 您拥有一定的 "
+    "fragment": "部署-angela-web-应用",
+    "content": "与任何其他的独立 Web 应用一样，Angela 的资源包内包含的仅仅是一大堆静态文件。 要部署 Angela Web 应用，您只需要:"
   },
   {
     "breadcrumbs": [
@@ -935,10 +971,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "部署 Angela 资源包",
+    "section": "部署 Angela Web 应用",
     "route": "/obtain/deploy",
-    "fragment": "部署-angela-资源包",
-    "content": "aaPanel"
+    "fragment": "部署-angela-web-应用",
+    "content": "解压 Angela 资源包到您的 Web 服务器的某个目录下 配置 Web 服务器以正确地处理 Angela 的静态资源"
   },
   {
     "breadcrumbs": [
@@ -947,10 +983,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "部署 Angela 资源包",
+    "section": "部署 Angela Web 应用",
     "route": "/obtain/deploy",
-    "fragment": "部署-angela-资源包",
-    "content": "/宝塔面板 的运维经验"
+    "fragment": "部署-angela-web-应用",
+    "content": "以下是一段最基本的适用于 Angela 的 Nginx 配置示例："
   },
   {
     "breadcrumbs": [
@@ -959,10 +995,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "部署 Angela 资源包",
+    "section": "部署 Angela Web 应用",
     "route": "/obtain/deploy",
-    "fragment": "部署-angela-资源包",
-    "content": "在这篇教程中，我们假设： 当前已经存在的 V2board 站点名为 best-vpn.org当前已经存在的 V2board 站点绑定了域名 best-vpn.org 我们定义： 后端站点：V2board 所在的站点（已存在）前端站点：Angela 所在的站点（还不存在）"
+    "fragment": "部署-angela-web-应用",
+    "content": "这一段配置必须放在 server 块的内部。建议将其作为最后一个 location 配置，以避免使其他配置失效。"
   },
   {
     "breadcrumbs": [
@@ -971,10 +1007,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
+    "section": "添加多语言支持（若需要）",
     "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "Angela 要求前后端分离的架构，而 V2board 目前同时担任着前端和后端。因此，我们需要 V2board 将前端让给 Angela —— 我们需要 V2board 所在的后端站点将 best-vpn.org 这个域名让给我们后续要创建的前端站点："
+    "fragment": "添加多语言支持若需要",
+    "content": "如果您的 Angela 资源包是多语言的，您需要进行额外的几步配置，以便让您的 Web 服务器能够根据用户请求头中的 Accept-Language 来提供对应的资源。 对于 Nginx，您可以使用 map 关键字来实现这一功能："
   },
   {
     "breadcrumbs": [
@@ -983,10 +1019,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
+    "section": "添加多语言支持（若需要）",
     "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "双击后端站点 "
+    "fragment": "添加多语言支持若需要",
+    "content": "这一段配置必须放在 server 块的外部。"
   },
   {
     "breadcrumbs": [
@@ -995,10 +1031,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
+    "section": "添加多语言支持（若需要）",
     "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "best-vpn.org"
+    "fragment": "添加多语言支持若需要",
+    "content": "以上的这一段配置将会根据用户请求头中的 Accept-Language 来设置一个变量 $accept_language： 所有 zh 开头的语言将会被映射为 zh，如 zh-CN, zh-TW, zh-HK 等所有 en 开头的语言将会被映射为 en，如 en-US, en-GB 等 另外，下面的这段配置会在 Accept-Language 没有匹配到任何语言时，使用 en 作为 $accept_language 的默认值："
   },
   {
     "breadcrumbs": [
@@ -1007,10 +1043,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
+    "section": "添加多语言支持（若需要）",
     "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "，进入站点详情界面 新增绑定 "
+    "fragment": "添加多语言支持若需要",
+    "content": "这一段配置需要放在所有 location 块的前面。"
   },
   {
     "breadcrumbs": [
@@ -1019,10 +1055,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
+    "section": "添加多语言支持（若需要）",
     "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "v2board.best-vpn.org"
+    "fragment": "添加多语言支持若需要",
+    "content": "最后，只需要略微修改原先的 location 配置，让其根据 $accept_language 来选择对应的资源即可："
   },
   {
     "breadcrumbs": [
@@ -1031,10 +1067,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
+    "section": "对接 V2board API",
     "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": " 和 "
+    "fragment": "对接-v2board-api",
+    "content": "截止到目前，您的 Angela Web 应用已经部署完毕了。然而，如果您尝试访问绑定的域名，您会发现虽然 Angela 可以启动，但是却无法正常工作，并且会有页面加载失败的报错。这是因为 Angela 目前还没有与 V2board API 完成对接，因此无法加载必要的数据。 Angela 完成启动后，会尝试请求当前域名下的 /api/ 下的 API 端点以加载必要的数据。因此，要使 Angela 能够正常工作，您需要在您的 V2board 服务器上配置一个反向代理，将 /api/ 下的请求转发到 V2board API 的地址。 对于 Nginx，这样的反向代理可以通过以下的 location 配置实现： 通过内网连接 V2board API（部署在同一台机器上）：通过公网连接 V2board API："
   },
   {
     "breadcrumbs": [
@@ -1043,10 +1079,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
+    "section": "对接 V2board API",
     "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "127.0.0.1:4321"
+    "fragment": "对接-v2board-api",
+    "content": "通过公网连接 V2board API 时，V2board 代码中获取到的站点地址会是 V2board API 的地址，而不是 Angela 的地址。您可能会需要在 V2board 管理后台中手动修改站点地址为 Angela 的地址。"
   },
   {
     "breadcrumbs": [
@@ -1055,298 +1091,10 @@
     ],
     "pageType": "guide",
     "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
+    "section": "我一定要为 Angela 分配一个新域名吗？",
     "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "移除绑定 "
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
-    "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "best-vpn.org"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "1. 更新后端站点域名绑定",
-    "route": "/obtain/deploy",
-    "fragment": "1-更新后端站点域名绑定",
-    "content": "如果先前的 SSL 证书不包含 v2board.best-vpn.org，我们需要获取新的证书。建议备份旧的证书：在后续的步骤中，我们后续要创建的前端站点将会绑定 best-vpn.org 并可以用上这份证书。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "2. 创建前端站点",
-    "route": "/obtain/deploy",
-    "fragment": "2-创建前端站点",
-    "content": "我们需要创建一个新的站点作为前端站点，用于服务 Angela 的资源文件： 在域名处，我们填写了 best-vpn.gateway 这个不存在的域名，这是因为站点名 best-vpn.org 已被我们现有的 V2board 站点占用，我们需要用一个不一样的名字以避免名称冲突。best-vpn.gateway、best-vpn.entry、best-vpn.frontend 等都是不错的选择。 不用担心，这并不意味着我们最终必须使用 best-vpn.gateway 作为这个站点的域名。我们会在后续的步骤中更正该站点的域名绑定。 另外，我们需要把 PHP 版本 选择为 纯静态。这是因为我们要创建的是一个前端站点。我们只需要这个站点能够正确返回请求的静态资源即可，并不需要 PHP。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "3. 更正前端站点域名绑定",
-    "route": "/obtain/deploy",
-    "fragment": "3-更正前端站点域名绑定",
-    "content": "双击后端站点 "
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "3. 更正前端站点域名绑定",
-    "route": "/obtain/deploy",
-    "fragment": "3-更正前端站点域名绑定",
-    "content": "best-vpn.gateway"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "3. 更正前端站点域名绑定",
-    "route": "/obtain/deploy",
-    "fragment": "3-更正前端站点域名绑定",
-    "content": "，进入站点详情界面 新增绑定 "
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "3. 更正前端站点域名绑定",
-    "route": "/obtain/deploy",
-    "fragment": "3-更正前端站点域名绑定",
-    "content": "best-vpn.org"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "3. 更正前端站点域名绑定",
-    "route": "/obtain/deploy",
-    "fragment": "3-更正前端站点域名绑定",
-    "content": "移除绑定 "
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "3. 更正前端站点域名绑定",
-    "route": "/obtain/deploy",
-    "fragment": "3-更正前端站点域名绑定",
-    "content": "best-vpn.gateway"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "4. 启用前端站点 HTTPS",
-    "route": "/obtain/deploy",
-    "fragment": "4-启用前端站点-https",
-    "content": "如果先前备份了后端站点的旧 SSL 证书，由于域名相同，我们可以直接使用备份的证书： 若未备份，则需要按常规流程申请新的证书。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "5. 修改前端站点配置文件",
-    "route": "/obtain/deploy",
-    "fragment": "5-修改前端站点配置文件",
-    "content": "接下来，我们需要转到 “配置文件” 页面，对站点的 Nginx 配置文件进行一些必要的修改："
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "5. 修改前端站点配置文件",
-    "route": "/obtain/deploy",
-    "fragment": "5-修改前端站点配置文件",
-    "content": "在配置文件的最开头，"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "5. 修改前端站点配置文件",
-    "route": "/obtain/deploy",
-    "fragment": "5-修改前端站点配置文件",
-    "content": "server"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "5. 修改前端站点配置文件",
-    "route": "/obtain/deploy",
-    "fragment": "5-修改前端站点配置文件",
-    "content": " 的前面，插入以下配置： 在配置文件的中间部分，"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "5. 修改前端站点配置文件",
-    "route": "/obtain/deploy",
-    "fragment": "5-修改前端站点配置文件",
-    "content": "root"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "5. 修改前端站点配置文件",
-    "route": "/obtain/deploy",
-    "fragment": "5-修改前端站点配置文件",
-    "content": " 的下一行，插入以下配置："
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "6. 上传 Angela 资源文件",
-    "route": "/obtain/deploy",
-    "fragment": "6-上传-angela-资源文件",
-    "content": "至此，前端站点已经基本配置完毕，最后只需将 Angela 资源包的内容上传到前端站点，即可完成 Angela 的全部准备工作。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "6. 上传 Angela 资源文件",
-    "route": "/obtain/deploy",
-    "fragment": "6-上传-angela-资源文件",
-    "content": "进入前端站点根目录 "
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "6. 上传 Angela 资源文件",
-    "route": "/obtain/deploy",
-    "fragment": "6-上传-angela-资源文件",
-    "content": "/www/wwwroot/best-vpn.gateway"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "6. 上传 Angela 资源文件",
-    "route": "/obtain/deploy",
-    "fragment": "6-上传-angela-资源文件",
-    "content": "上传 Angela 资源包并解压 将 "
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "6. 上传 Angela 资源文件",
-    "route": "/obtain/deploy",
-    "fragment": "6-上传-angela-资源文件",
-    "content": "browser"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "6. 上传 Angela 资源文件",
-    "route": "/obtain/deploy",
-    "fragment": "6-上传-angela-资源文件",
-    "content": " 文件夹内的所有内容移动到站点根目录下 移除多余的文件/文件夹"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "我该如何访问 V2board 管理后台？",
-    "route": "/obtain/deploy",
-    "fragment": "我该如何访问-v2board-管理后台",
-    "content": "通过后端域名访问即可，如 https://v2board.best-vpn.org/abcdefg/ 该后端域名只有您自己知道，用户是通过前端域名的反代规则访问后端的。"
-  },
-  {
-    "breadcrumbs": [
-      "获取 Angela",
-      "部署 Angela 资源包"
-    ],
-    "pageType": "guide",
-    "title": "部署 Angela 资源包",
-    "section": "为什么 Angela 报错页面加载失败？",
-    "route": "/obtain/deploy",
-    "fragment": "为什么-angela-报错页面加载失败",
-    "content": "Angela 无法从后端获取数据，请跟随教程检查反代配置。"
+    "fragment": "我一定要为-angela-分配一个新域名吗",
+    "content": "在部署的过程中，您确实需要为 Angela 分配一个新的域名。然而，部署完成后，您可以为 V2board 分配一个新的域名，然后再重新将 V2board 之前的域名分配给 Angela。这样，在部署完成后，您的用户可以直接通过原先的域名访问 Angela，但您会需要通过新的 V2board 域名来访问 V2board 管理后台。"
   },
   {
     "breadcrumbs": [
@@ -1467,54 +1215,6 @@
     "route": "/obtain/purchase",
     "fragment": "angela-发布新版本了我可以更新吗",
     "content": "是的，您可以随时向我们索取最新版本的 Angela 资源包。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写公告"
-    ],
-    "pageType": "guide",
-    "title": "撰写公告",
-    "section": "撰写公告",
-    "route": "/recipes/compose-announcements",
-    "fragment": "撰写公告",
-    "content": "Angela 支持您以 Markdown 格式撰写公告： 以上的 Markdown 代码会被渲染为如下的公告："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写公告"
-    ],
-    "pageType": "guide",
-    "title": "撰写公告",
-    "section": "撰写公告",
-    "route": "/recipes/compose-announcements",
-    "fragment": "撰写公告",
-    "content": "Angela 不支持在普通公告中显示图片。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写公告"
-    ],
-    "pageType": "guide",
-    "title": "撰写公告",
-    "section": "弹窗公告",
-    "route": "/recipes/compose-announcements",
-    "fragment": "弹窗公告",
-    "content": "为公告加上 --mandatory-view 或者 弹窗 标签后，Angela 会在用户登入后以弹窗的形式展示该条公告： 只要用户处于登入状态，在任何页面都会弹窗如果有多条公告，Angela 会依次弹窗已经阅读过的公告不会再次弹窗只有点击按钮才可以关闭弹窗公告并标记为已读"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "撰写公告"
-    ],
-    "pageType": "guide",
-    "title": "撰写公告",
-    "section": "弹窗公告",
-    "route": "/recipes/compose-announcements",
-    "fragment": "弹窗公告",
-    "content": "弹窗公告未来会支持图片。"
   },
   {
     "breadcrumbs": [
@@ -1747,38 +1447,50 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "撰写套餐描述"
+      "撰写公告"
     ],
     "pageType": "guide",
-    "title": "撰写套餐描述",
-    "section": "撰写套餐描述",
-    "route": "/recipes/compose-plan-description",
-    "fragment": "撰写套餐描述",
-    "content": "Angela 支持两种套餐描述格式： MarkdownJSON"
+    "title": "撰写公告",
+    "section": "撰写公告",
+    "route": "/recipes/compose-announcements",
+    "fragment": "撰写公告",
+    "content": "Angela 支持您以 Markdown 格式撰写公告： 以上的 Markdown 代码会被渲染为如下的公告："
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "撰写套餐描述"
+      "撰写公告"
     ],
     "pageType": "guide",
-    "title": "撰写套餐描述",
-    "section": "Markdown",
-    "route": "/recipes/compose-plan-description",
-    "fragment": "markdown",
-    "content": "您可以在套餐描述中使用 Markdown 格式，Angela 会为您正确渲染其内容。 由于 Markdown 是 HTML 的超集，Angela Elements 同样在套餐描述中可用。"
+    "title": "撰写公告",
+    "section": "撰写公告",
+    "route": "/recipes/compose-announcements",
+    "fragment": "撰写公告",
+    "content": "Angela 不支持在普通公告中显示图片。"
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "撰写套餐描述"
+      "撰写公告"
     ],
     "pageType": "guide",
-    "title": "撰写套餐描述",
-    "section": "JSON",
-    "route": "/recipes/compose-plan-description",
-    "fragment": "json",
-    "content": "Angela 同样支持与主流 V2board 原生 App 相同的 JSON 格式来描述套餐："
+    "title": "撰写公告",
+    "section": "弹窗公告",
+    "route": "/recipes/compose-announcements",
+    "fragment": "弹窗公告",
+    "content": "为公告加上 --mandatory-view 或者 弹窗 标签后，Angela 会在用户登入后以弹窗的形式展示该条公告： 只要用户处于登入状态，在任何页面都会弹窗如果有多条公告，Angela 会依次弹窗已经阅读过的公告不会再次弹窗只有点击按钮才可以关闭弹窗公告并标记为已读"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写公告"
+    ],
+    "pageType": "guide",
+    "title": "撰写公告",
+    "section": "弹窗公告",
+    "route": "/recipes/compose-announcements",
+    "fragment": "弹窗公告",
+    "content": "弹窗公告未来会支持图片。"
   },
   {
     "breadcrumbs": [
@@ -1987,14 +1699,278 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "配置首页图片"
+      "撰写套餐描述"
     ],
     "pageType": "guide",
-    "title": "配置首页图片",
-    "section": "配置首页图片",
-    "route": "/recipes/configure-home-image",
-    "fragment": "配置首页图片",
-    "content": "Angela 的首页展示了一张图片，用于塑造品牌印象： 该图片由 settings.yaml 中的 homeImage 字段控制："
+    "title": "撰写套餐描述",
+    "section": "撰写套餐描述",
+    "route": "/recipes/compose-plan-description",
+    "fragment": "撰写套餐描述",
+    "content": "Angela 支持两种套餐描述格式： MarkdownJSON"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写套餐描述"
+    ],
+    "pageType": "guide",
+    "title": "撰写套餐描述",
+    "section": "Markdown",
+    "route": "/recipes/compose-plan-description",
+    "fragment": "markdown",
+    "content": "您可以在套餐描述中使用 Markdown 格式，Angela 会为您正确渲染其内容。 由于 Markdown 是 HTML 的超集，Angela Elements 同样在套餐描述中可用。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "撰写套餐描述"
+    ],
+    "pageType": "guide",
+    "title": "撰写套餐描述",
+    "section": "JSON",
+    "route": "/recipes/compose-plan-description",
+    "fragment": "json",
+    "content": "Angela 同样支持与主流 V2board 原生 App 相同的 JSON 格式来描述套餐："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "Angela 支持链接到多个平台的原生 App： 原生 App 链接由 settings.yaml 中的 nativeApps 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "platform App 的平台名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "link App 的下载链接"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "icon App 的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "Material Symbols"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": " 图标或 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "平台图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "概念 可选值"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "平台图标"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "iWindows, iLinux, iAndroid, iApple"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "删除或注释 nativeApps 字段及其下属字段将完全禁用此功能。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "建议原生 App 链接不超过 5 个，以保证页面整洁并防止内容溢出。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "此外，Angela 还支持在原生 App 链接附近渲染一个帮助按钮，由 nativeAppsHelp 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "text 帮助按钮的文本"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "link 要跳转的"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "站内"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "链接，如 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置原生 App 链接"
+    ],
+    "pageType": "guide",
+    "title": "配置原生 App 链接",
+    "section": "配置原生 App 链接",
+    "route": "/recipes/configure-native-apps",
+    "fragment": "配置原生-app-链接",
+    "content": "/manuals/1"
   },
   {
     "breadcrumbs": [
@@ -2563,246 +2539,6 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "Angela 支持链接到多个平台的原生 App： 原生 App 链接由 settings.yaml 中的 nativeApps 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "字段 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "platform App 的平台名称"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "link App 的下载链接"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "icon App 的 "
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "Material Symbols"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": " 图标或 "
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "平台图标"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "概念 可选值"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "平台图标"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "iWindows, iLinux, iAndroid, iApple"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "删除或注释 nativeApps 字段及其下属字段将完全禁用此功能。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "建议原生 App 链接不超过 5 个，以保证页面整洁并防止内容溢出。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "此外，Angela 还支持在原生 App 链接附近渲染一个帮助按钮，由 nativeAppsHelp 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "字段 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "text 帮助按钮的文本"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "link 要跳转的"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "站内"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "链接，如 "
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置原生 App 链接"
-    ],
-    "pageType": "guide",
-    "title": "配置原生 App 链接",
-    "section": "配置原生 App 链接",
-    "route": "/recipes/configure-native-apps",
-    "fragment": "配置原生-app-链接",
-    "content": "/manuals/1"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
       "配置 Telegram 相关"
     ],
     "pageType": "guide",
@@ -2947,6 +2683,18 @@
   {
     "breadcrumbs": [
       "使用 Angela",
+      "配置首页图片"
+    ],
+    "pageType": "guide",
+    "title": "配置首页图片",
+    "section": "配置首页图片",
+    "route": "/recipes/configure-home-image",
+    "fragment": "配置首页图片",
+    "content": "Angela 的首页展示了一张图片，用于塑造品牌印象： 该图片由 settings.yaml 中的 homeImage 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
       "配置工单等级显示文本"
     ],
     "pageType": "guide",
@@ -2955,126 +2703,6 @@
     "route": "/recipes/configure-ticket-levels",
     "fragment": "配置工单等级显示文本",
     "content": "V2Board 支持三个工单等级：低优先级、中优先级 和 高优先级： Angela 支持您将这些工单等级用于其他用途。您可以在 settings.yaml 中的 ticketLevels 字段中配置这三个工单等级的显示文本： 您或许可以用工单等级来进行工单分类："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "Angela 内置一个浏览器黑名单，用于引导用户转而使用更现代的浏览器，以获得更好的体验。 当用户使用的浏览器命中黑名单时，Angela 会在启动过程中弹出一个可关闭的弹窗，建议用户更换浏览器。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "Angela 不会阻止用户使用黑名单中的浏览器，只是提供一个友好的建议。"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "Angela 的浏览器黑名单由 settings.yaml 中的 uaBlacklist 字段控制："
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "字段 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "name 浏览器名称"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "match 用于匹配 UA 的正则表达式，可以是多个"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "message 弹窗的内容"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "变量 描述"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "{name}"
-  },
-  {
-    "breadcrumbs": [
-      "使用 Angela",
-      "配置浏览器黑名单"
-    ],
-    "pageType": "guide",
-    "title": "配置浏览器黑名单",
-    "section": "配置浏览器黑名单",
-    "route": "/recipes/configure-ua-blacklist",
-    "fragment": "配置浏览器黑名单",
-    "content": "浏览器名称"
   },
   {
     "breadcrumbs": [
@@ -3199,38 +2827,122 @@
   {
     "breadcrumbs": [
       "使用 Angela",
-      "集成 Google Analytics"
+      "配置浏览器黑名单"
     ],
     "pageType": "guide",
-    "title": "集成 Google Analytics",
-    "section": "集成 Google Analytics",
-    "route": "/recipes/integrate-with-google-analytics",
-    "fragment": "集成-google-analytics",
-    "content": "在 extension.html 中添加 Google Analytics 相关的 "
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 内置一个浏览器黑名单，用于引导用户转而使用更现代的浏览器，以获得更好的体验。 当用户使用的浏览器命中黑名单时，Angela 会在启动过程中弹出一个可关闭的弹窗，建议用户更换浏览器。"
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "集成 Google Analytics"
+      "配置浏览器黑名单"
     ],
     "pageType": "guide",
-    "title": "集成 Google Analytics",
-    "section": "集成 Google Analytics",
-    "route": "/recipes/integrate-with-google-analytics",
-    "fragment": "集成-google-analytics",
-    "content": " 即可为 Angela 启用 Google Analytics。</p>"
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 不会阻止用户使用黑名单中的浏览器，只是提供一个友好的建议。"
   },
   {
     "breadcrumbs": [
       "使用 Angela",
-      "集成 Google Analytics"
+      "配置浏览器黑名单"
     ],
     "pageType": "guide",
-    "title": "集成 Google Analytics",
-    "section": "集成 Google Analytics",
-    "route": "/recipes/integrate-with-google-analytics",
-    "fragment": "集成-google-analytics",
-    "content": "此外，通过 Angela Access Points ，Google Analytics 可以收集细粒度更高的用户行为数据 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Google Analytics 集成："
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "Angela 的浏览器黑名单由 settings.yaml 中的 uaBlacklist 字段控制："
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "字段 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "name 浏览器名称"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "match 用于匹配 UA 的正则表达式，可以是多个"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "message 弹窗的内容"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "变量 描述"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "{name}"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "配置浏览器黑名单"
+    ],
+    "pageType": "guide",
+    "title": "配置浏览器黑名单",
+    "section": "配置浏览器黑名单",
+    "route": "/recipes/configure-ua-blacklist",
+    "fragment": "配置浏览器黑名单",
+    "content": "浏览器名称"
   },
   {
     "breadcrumbs": [
@@ -3519,5 +3231,41 @@
     "route": "/recipes/switch-to-cloudflare-turnstile",
     "fragment": "使用-cloudflare-turnstile",
     "content": "Angela 支持使用 Cloudflare Turnstile 作为人机验证服务： 要切换到 Cloudflare Turnstile，您首先需要对您的 V2board 实例进行一些更改： 随后，您只需要在 V2board 后台管理界面中，将 ReCaptcha 的 key 和 secret 都替换为 Cloudflare Turnstile 的 key 和 secret 即可。Angela 会自动适配人机验证服务商的更改。"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "集成 Google Analytics"
+    ],
+    "pageType": "guide",
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": "在 extension.html 中添加 Google Analytics 相关的 "
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "集成 Google Analytics"
+    ],
+    "pageType": "guide",
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": " 即可为 Angela 启用 Google Analytics。</p>"
+  },
+  {
+    "breadcrumbs": [
+      "使用 Angela",
+      "集成 Google Analytics"
+    ],
+    "pageType": "guide",
+    "title": "集成 Google Analytics",
+    "section": "集成 Google Analytics",
+    "route": "/recipes/integrate-with-google-analytics",
+    "fragment": "集成-google-analytics",
+    "content": "此外，通过 Angela Access Points ，Google Analytics 可以收集细粒度更高的用户行为数据 以下是一个示例实现，将全部代码复制到 extension.html 即可启用进阶 Google Analytics 集成："
   }
 ]

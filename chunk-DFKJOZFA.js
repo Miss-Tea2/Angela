@@ -1,0 +1,1 @@
+import"./chunk-ODN5LVDJ.js";var t=[{path:"",redirectTo:"deploy",pathMatch:"full"},{path:"",title:"\u83B7\u53D6 Angela",children:[{path:"deploy",loadChildren:()=>import("./chunk-JJG3TK2U.js")},{path:"purchase",loadChildren:()=>import("./chunk-HYKJQ3AH.js")}]}],e=t;export{e as default};
